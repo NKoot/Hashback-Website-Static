@@ -1,7 +1,7 @@
 // import styles from './../css/main.css';
 import styles from '../css/main.css';
 // import _ from 'lodash';
-// import signup from './signup';
+import signup from './signup';
 var $ = require('jquery/src/jquery');
 
 $('body').animate({

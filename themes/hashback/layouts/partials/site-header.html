@@ -5,16 +5,8 @@
   <header class="cover bg-center relative main_header" style="background-image: url('{{ $featured_image }}');">
     <div>
       {{ partial "site-navigation.html" .}}
-      <div class="tc ph3 ph4-ns logo">
+      <div class="tc logo center" id="main_logo">
         {{ partial "svg/logo.svg" }}
-        <!-- <h1 class="f2 f-subheadline-l ttu fw7 mb0 lh-title" style="color: #030844;">
-          {{ .Site.Params.description | default .Site.Title }}
-        </h1>
-        {{ with .Params.description }}
-          <h2 class="fw4 f5 f3-l black-80 measure-wide-l center mt3">
-            {{ . }}
-          </h2>
-        {{ end }} -->
       </div>
     </div>
     <div class="animated_image mt4">
@@ -29,17 +21,19 @@
   </header>
 {{ else }}
   <header>
-    <div class="pb3-m pb3-l">
-      {{ partial "site-navigation.html" . }}
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw7 pt5 black-90 mb0 lh-title ttu">
-          {{ .Site.Title }}
-        </h1>
-        {{ with .Params.description }}
-          <h2 class="fw4 f5 f3-l black-80 measure-wide-l center mt3">
-            {{ . }}
-          </h2>
-        {{ end }}
+    <div>
+      {{ partial "site-navigation.html" .}}
+      <div class="tc logo center" id="main_logo">
+        {{ partial "svg/logo.svg" }}
+      </div>
+    </div>
+    <div class="animated_image mt4">
+      <div class="animation-container force3d" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1; ">
+        <a class="anchor-link" href="#">
+          <div class="rmwidget widget-shape icon" style="left: 0px; top: 0px; width: 60px; height: 60px; z-index: 122;">
+            <img src="{{ $.Site.BaseURL }}/images/{{ .Params.arrow }}">
+          </div>
+        </a>
       </div>
     </div>
   </header>

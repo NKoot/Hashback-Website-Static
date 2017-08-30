@@ -49,3 +49,50 @@ enableRobotsTXT = true
     name = "EN"
     weight = -60
     url = "/lang/"
+
+[[menu.developers]]
+    name = "Introduction"
+    weight = -100
+    url = "/introduction/"
+[[menu.developers]]
+    name = "Hashback API"
+    weight = -90
+    url = "/api/"
+[[menu.developers]]
+    name = "Technical support"
+    weight = -80
+    url = "/support/"
+
+[[menu.business]]
+    name = "Presentation"
+    weight = -100
+    url = "/presentation/"
+[[menu.business]]
+    name = "Join"
+    weight = -90
+    url = "/join/"
+[[menu.business]]
+    name = "Benefits"
+    weight = -80
+    url = "/benefits/"
+[[menu.business]]
+    name = "Use cases"
+    weight = -70
+    url = "/use-cases/"
+
+[[menu.project]]
+    name = "White Paper"
+    weight = -100
+    url = "/white-paper/"
+[[menu.project]]
+    name = "team"
+    weight = -90
+    url = "/team/"
+[[menu.project]]
+    name = "Join the team"
+    weight = -80
+    url = "/join-the-team/"
+[[menu.project]]
+    name = "Token"
+    weight = -70
+    url = "/token/"
