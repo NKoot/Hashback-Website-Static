@@ -1,0 +1,29 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+{{/* Get the current page's URL so we can compare it to the list below */}}
+{{ $currentPageUrl := .URL }}
+{{/* Get a list of this section's other pages. "RegularPages" excludes the list page    */}}
+{{ $currentSection := where .Data.Pages "Section" .Section }}
+
+  <div class="bg-transparent shadow-1">
+    <ul class="flex flex-row flex-column-m justify-center center_content center submenu">
+      {{ range $currentSection }}
+        <li class="list f6 fw2 ttu pv2 db{{ if eq $currentPageUrl .URL }} active_item{{end}}">
+          {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
+          <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="flex-l textpage_bg">
+    <article class="cf mv3 center_content center bg-white">
+      <img src="{{ $.Site.BaseURL }}/{{ .Params.text_image }}">
+      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links nested-img mid-gray w-80 center text_page">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+{{ end }}
+
