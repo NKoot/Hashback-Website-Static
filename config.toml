@@ -1,0 +1,51 @@
+title = "Hashback"
+baseURL = "https://www.hashback.org"
+languageCode = "en-us"
+theme = "hashback"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[params]
+  description = "Hashback"
+  facebook = "https://www.facebook.com"
+  twitter = "https://www.twitter.com"
+  medium = "https://www.mwdium.com"
+  github = "https://www.github.com"
+  bitcoin = "https://www.bitcoin.com"
+  telegram = "https://www.telegram.com"
+  instagram = ""
+  youtube = ""
+  featured_image = "/images/logo.png"
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+
+[[menu.top]]
+    name = "Executive summary"
+    weight = -110
+    url = "/executive-summary/"
+    identifier = "executive"
+[[menu.top]]
+    name = "White paper"
+    weight = -100
+    url = "/white-paper/"
+[[menu.top]]
+    name = "Development roadmap"
+    weight = -90
+    url = "/development-roadmap/"
+[[menu.top]]
+    name = "Blog"
+    weight = -80
+    url = "/blog/"
+[[menu.top]]
+    name = "GitHub"
+    weight = -70
+    url = "/github/"
+[[menu.top]]
+    name = "EN"
+    weight = -60
+    url = "/lang/"

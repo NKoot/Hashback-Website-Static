@@ -1,0 +1,18 @@
+{{ $currentPage := . }}
+{{ $currentPageUrl := .URL }}
+<nav class="pv3" role="navigation">
+  <div>
+      {{ if .Site.Menus.top }}
+        <ul class="pl0 mr3 flex flex-row flex-column-m justify-end">
+          {{ range .Site.Menus.top }}
+          <li class="list f5 fw4 dib pr4 ttu{{ if eq $currentPageUrl .URL }} active_item{{end}}">
+            <a class="no-underline white-90 pv1" href="{{ .URL }}" title="{{ .Name }} page">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      <!-- {{ partial "social-follow.html" . }} -->
+  </div>
+</nav>

@@ -1,0 +1,40 @@
+<svg width="398" height="auto" viewBox="0 0 398 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>3</title>
+<desc>Created using Figma</desc>
+<g id="Canvas_orange" transform="translate(-4042 -1109)">
+<g id="3">
+<g id="rect2" filter="url(#filter0_d_orange)">
+<use xlink:href="#path0_stroke_orange" transform="translate(4056 1117)" fill="#FFFFFF"/>
+</g>
+<g id="rect2 copy 2" filter="url(#filter1_d_orange)" style="mix-blend-mode:hard-light">
+<use xlink:href="#path1_fill_orange" transform="translate(4044 1107)" fill="#F28D15"/>
+</g>
+<g id="Vector 6">
+<use xlink:href="#path2_fill_orange" transform="translate(4050 1300)" fill="#F2994A"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_orange" filterUnits="userSpaceOnUse" x="4043" y="1110" width="398" height="418" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="5"/>
+<feGaussianBlur stdDeviation="6"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d_orange" filterUnits="userSpaceOnUse" x="4042" y="1108" width="378" height="399" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_stroke_orange" d="M 0.999936 1.99998L 0.999936 0.499977L -0.500064 0.499977L -0.500064 1.99998L 0.999936 1.99998ZM 371 1.99998L 372.5 1.99998L 372.5 0.499977L 371 0.499977L 371 1.99998ZM 371 392L 371 393.5L 372.5 393.5L 372.5 392L 371 392ZM 0.999936 392L -0.500064 392L -0.500064 393.5L 0.999936 393.5L 0.999936 392ZM 0.999936 3.49998L 371 3.49998L 371 0.499977L 0.999936 0.499977L 0.999936 3.49998ZM 369.5 1.99998L 369.5 392L 372.5 392L 372.5 1.99998L 369.5 1.99998ZM 371 390.5L 0.999936 390.5L 0.999936 393.5L 371 393.5L 371 390.5ZM 2.49994 392L 2.49994 1.99998L -0.500064 1.99998L -0.500064 392L 2.49994 392Z"/>
+<path id="path1_fill_orange" fill-rule="evenodd" d="M 2.00003 1.99998L 372 1.99998L 372 392L 2.00003 392L 2.00003 1.99998Z"/>
+<path id="path2_fill_orange" d="M 183 0L 0 199L 366 199L 183 0Z"/>
+</defs>
+</svg>

@@ -1,0 +1,114 @@
+{{ $.Scratch.Add "labelClasses" "f6 b db mb1 mt3 sans-serif mid-gray" }}
+{{ $.Scratch.Add "inputClasses" "w-100 f5 pv3 ph3 bg-white bn" }}
+
+<div ng-controller="MainCtrl as ctrl">
+    <div ng-if="!ctrl.complete">
+        <form class="black-80 sans-serif" name="ctrl.hotel_form">
+
+            <label class="{{ $.Scratch.Get "labelClasses" }}"  for="name"><span class="red">*</span> Contact person name</label>
+            <input type="text" id="name" name="name" class="{{ $.Scratch.Get "inputClasses" }}"  required placeholder=" "  aria-labelledby="name" ng-model="ctrl.data.name"/>
+            <div ng-messages="ctrl.hotel_form.name.$error" class="requirements f6 dark-red glow ph3 overflow-hidden">
+                <!-- <div ng-message="required">Name is required</div> -->
+            </div>
+
+            <label class="{{ $.Scratch.Get "labelClasses" }}" for="email"><span class="red">*</span> Email Address</label>
+            <input type="email" name="email" ng-pattern="/^.+@.+\..+$/" class="{{ $.Scratch.Get "inputClasses" }}"  required placeholder="name@mail.com"  aria-labelledby="email" ng-model="ctrl.data.email"/>
+            <div ng-messages="ctrl.hotel_form.email.$error" class="requirements f6 glow dark-red ph3 overflow-hidden">
+                <!-- <div ng-message="required">Email is required</div> -->
+                <div ng-message="pattern">Email is invalid</div>
+            </div>
+
+            <label class="{{ $.Scratch.Get "labelClasses" }}"  for="phone"><span class="red">*</span> Phone</label>
+            <div class="phone_input">
+                <input type="number" name="phone" ng-pattern="/^\s*(?:\d{1,})(\d{3})(\d{7})$/" class="{{ $.Scratch.Get "inputClasses" }}" placeholder="only digits, eg. 79035556677" required aria-labelledby="phone"  ng-model="ctrl.data.phone"/>
+            </div>
+            <div ng-messages="ctrl.hotel_form.phone.$error" class="requirements f6 glow dark-red ph3 overflow-hidden">
+                <!-- <div ng-message="required">Phone is required</div> -->
+                <div ng-message="pattern">Phone is invalid</div>
+            </div>
+
+            <label class="{{ $.Scratch.Get "labelClasses" }}" for="hotel">Find hotel</label>
+            <ui-select ng-model="ctrl.selectedHotel" ng-init="$parent.ctrl.myUiSelect = $select" theme="selectize" reset-search-input="false" on-select="ctrl.findHotelInFB($item)" ng-change="ctrl.resetNewHotel()">
+                <ui-select-match>[[ctrl.myUiSelect.selected.name]]</ui-select-match>
+                <ui-select-choices repeat="hotel in ctrl.hotels track by $index"
+                 refresh="ctrl.searchHotel(ctrl.myUiSelect.search)"
+                 refresh-delay="500">
+                    <img ng-src="[[hotel.images[0].thumbnail || hotel.images[0].url]]" class="avatar">
+                    <div>
+                        <h4 ng-bind-html="hotel.name | highlight: ctrl.myUiSelect.search"></h4>
+                        <span>[[hotel.country]], [[hotel.city]], [[hotel.address]]</span>
+                    </div>
+                </ui-select-choices>
+            </ui-select>
+            <div ng-if="ctrl.selectedHotel" class="relative pt2">
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_website"><span class="red">*</span> Website</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_website" required type="text" aria-label="hotel website" ng-model="ctrl.fbHotel.link.website.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_booking">Booking</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_booking" type="text" aria-label="hotel booking" ng-model="ctrl.fbHotel.link.booking.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_expedia">Expedia</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_expedia" type="text" aria-label="hotel expedia" ng-model="ctrl.fbHotel.link.expedia.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_foursquare">Foursquare</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_foursquare" type="text" aria-label="hotel foursquare" ng-model="ctrl.fbHotel.link.foursquare.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_tripadvisor">Tripadvisor</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_tripadvisor" type="text" aria-label="hotel tripadvisor" ng-model="ctrl.fbHotel.link.tripadvisor.url"/>
+            </div>
+
+            <p>[[ctrl.errorMessage]]</p>
+
+            <p>Did not find the hotel? <span ng-click="ctrl.newHotel = true" class="link">Add a new one</span>, please</p>
+            <div ng-if="ctrl.newHotel" class="relative pt2">
+                <span class="close_button" ng-click="ctrl.resetNewHotel()">&#x2715;</span>
+                <label class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_name"><span class="red">*</span> Hotel name</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" type="text" required name="hotel_name" ng-model="ctrl.data.newHotel.name"  ng-model-options="{debounce: 500}" ng-change="ctrl.compareHotel('name', ctrl.data.newHotel.name)"/>
+                <div class="glow dark-red ph3 f6 overflow-hidden" ng-if="ctrl.hotelExist.name">This hotel is already exist, specify request please</div>
+
+                <label for="hotel_city" class="{{ $.Scratch.Get "labelClasses" }}" required><span class="red">*</span> City</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" type="text" name="hotel_city" ng-model="ctrl.data.newHotel.city" ng-model-options="{debounce: 500}" ng-required="true" />
+
+                <label for="hotel_country" class="{{ $.Scratch.Get "labelClasses" }}"><span class="red">*</span> Country</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" type="text" ng-model="ctrl.data.newHotel.country" ng-model-options="{debounce: 500}" name="hotel_country" ng-required="true"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_address"><span class="red">*</span> Hotel address</label>
+                <textarea class="{{ $.Scratch.Get "inputClasses" }}" required rows="3" aria-label="Hotel address" name="hotel_address" ng-model="ctrl.data.newHotel.address" ng-model-options="{debounce: 500}"></textarea>
+
+                <div ng-if="ctrl.data.newHotel.address" class="hotel_map" style="">
+                    <ng-map center="[[ctrl.data.newHotel.country]] [[ctrl.data.newHotel.city]] [[ctrl.data.newHotel.address]]" zoom="15" style="width: 100%;">
+                        <marker position="[[ctrl.data.newHotel.country]] [[ctrl.data.newHotel.city]] [[ctrl.data.newHotel.address]]" draggable="true" on-dragend="ctrl.dragMapMarkerEnd()" on-position_changed="ctrl.markerPositionChange()" title="Hotel address"></marker>
+                    </ng-map>
+                </div>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_website"><span class="red">*</span> Website</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_website" required type="text" aria-label="hotel website" ng-model="ctrl.data.newHotel.link.website.url" ng-change="ctrl.compareHotel('website', ctrl.data.newHotel.link.website.url)"/>
+                <div class="glow dark-red ph3 f6 overflow-hidden" ng-if="ctrl.hotelExist.website">This hotel is already exist</div>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_booking">Booking</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_booking" type="text" aria-label="hotel booking" ng-model="ctrl.data.newHotel.link.booking.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_expedia">Expedia</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_expedia" type="text" aria-label="hotel expedia" ng-model="ctrl.data.newHotel.link.expedia.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_foursquare">Foursquare</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_foursquare" type="text" aria-label="hotel foursquare" ng-model="ctrl.data.newHotel.link.foursquare.url"/>
+
+                <label  class="{{ $.Scratch.Get "labelClasses" }}" for="hotel_tripadvisor">Tripadvisor</label>
+                <input class="{{ $.Scratch.Get "inputClasses" }}" name="hotel_tripadvisor" type="text" aria-label="hotel tripadvisor" ng-model="ctrl.data.newHotel.link.tripadvisor.url"/>
+            </div>
+
+            <!-- <div class="g-recaptcha" data-sitekey="6LdSMCcUAAAAALxH55dPGNFE4TZEhMsP0vW_2UO3"></div> -->
+            <!-- <div id="html_recaptcha"></div> -->
+            <div
+                vc-recaptcha
+                key="'6LdSMCcUAAAAALxH55dPGNFE4TZEhMsP0vW_2UO3'"
+            ></div>
+
+            <input class="f3 br1-ns db w-100 mv2 white pa3 bn hover-shadow hover-bg-blue bg-animate bg-blue pointer" type="button" value="Send" ng-disabled="ctrl.hotel_form.$invalid || (!ctrl.newHotel && !ctrl.selectedHotel)" ng-click="ctrl.saveRequest()"/>
+
+        </form>
+    </div>
+
+    <div ng-if="ctrl.complete">Thank you for your registration in Chatnbook, our manager will contact you shortly</div>
+</div>

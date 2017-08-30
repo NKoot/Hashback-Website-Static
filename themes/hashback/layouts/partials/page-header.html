@@ -1,0 +1,27 @@
+{{ $featured_image := .Params.header_bg }}
+{{ if $featured_image }}
+  {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+  {{ $featured_image := (trim $featured_image "/") | absURL }}
+  <header class="small_header cover bg-top" style="background-image: url('{{ $featured_image }}');">
+    <div class="center_content center">
+      <div class="flex flex-row flex-column-m justify-between">
+        <a href="/">{{ partial "svg/logo_small.svg" }}</a>
+        {{ partial "site-navigation.html" . }}
+      </div>
+      <div class="tc-l ph3 ph4-ns mt4">
+        <h1 class="f2 f1-l fw2 mb0 pt2 white lh-title ttu">{{ .Title | default .Site.Title }}</h1>
+        {{ with .Params.description  }}
+          <div class="breadcrumbs fw1 f6 f5-l white measure-wide-l center lh-copy mt4 mb0">
+            <a href="/">Home</a> / {{ . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ else }}
+  <header>
+    <div>
+      {{ partial "site-navigation.html" . }}
+    </div>
+  </header>
+{{ end }}
