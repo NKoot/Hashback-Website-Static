@@ -1,3 +1,6 @@
+@custom-media --breakpoint-not-small screen and (max-width: 480px);
+@custom-media --breakpoint-medium screen and (min-width: 480px) and (max-width: 1024px);
+@custom-media --breakpoint-large screen and (min-width: 1024px);
 html {
     font-size: 24px;
     line-height: 1.23;
@@ -36,6 +39,10 @@ header.main_header, .about {
 }
 header.small_header {
     height: 229px;
+}
+#logo_small {
+    width: 276px;
+    height: auto;
 }
 .center_content {
     width: 1170px;
@@ -399,10 +406,13 @@ footer .social-follow a {
     }
     #main_logo {
         width: 599px;
-        height: 396px;
+        height: auto;
     }
     .orders {
         height: 974px !important;
+    }
+    .orders_item {
+        width: 372px;
     }
     .center_content {
         width: 1170px;
@@ -421,6 +431,10 @@ footer .social-follow a {
     }
     header.main_header, .about {
         height: 737px !important;
+    }
+    #main_logo {
+        width: 500px;
+        height: auto;
     }
     .orders {
         height: 731px !important;
@@ -468,13 +482,16 @@ footer .social-follow a {
 }
 @media only screen and (max-width: 1024px) {
     header.main_header, .about {
-        height: 524px !important;
+        height: 646px !important;
+    }
+    .center_content {
+        width: 870px;
     }
     .orders {
-        height: 519px !important;
+        height: 642px !important;
     }
-    .orders > div {
-        width: 90%;
+    .orders_item {
+        width: 227px;
     }
     .animated_image {
         left: 48%;
@@ -490,8 +507,26 @@ footer .social-follow a {
     .additional_text {
         bottom: 40px;
     }
+    footer .social-follow a {
+        float: left;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #main_logo {
+        width: 400px;
+        height: auto;
+    }
+    #logo_small {
+        width: 273px;
+        height: auto;
+    }
+    .center_content {
+        width: 712px;
+    }
+
 }
 @media all and (min-device-width : 320px)
 and (max-device-width : 736px), only screen and (max-width: 480px) {
 
 }
+

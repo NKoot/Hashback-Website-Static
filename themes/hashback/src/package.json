@@ -30,5 +30,13 @@
     "lodash": "^4.17.4"
   },
   "dependencies": {
+    "angular": "^1.6.4",
+    "angular-local-storage": "^0.6.0",
+    "angular-messages": "^1.6.4",
+    "angular-recaptcha": "^4.1.0",
+    "angular-sanitize": "^1.6.4",
+    "firebase": "^4.1.3",
+    "select2": "^4.0.3",
+    "ui-select": "^0.19.8"
   }
 }

@@ -1,7 +1,7 @@
 ---
-title: "development roadmap"
+title: "join the team"
 header_bg: '/images/header_second.jpg'
-description: "development roadmap"
+description: "join the team"
 type: page
 footer_image: '/images/footer_bg.png'
 ---

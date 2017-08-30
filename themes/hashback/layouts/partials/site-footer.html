@@ -1,38 +1,56 @@
 {{ $footer_image := .Params.footer_image }}
-<footer class="cover bottom-0 pr5 pr0-ns pv3 black-90" role="contentinfo" style="background-image: url('{{ $footer_image }}');">
-  <div class="flex flex-row-l flex-column-m justify-between center_content center ">
-	  <div class="order-0-l order-last-m pb2-ns order-last-ns">
+{{ $currentPage := . }}
+{{ $currentPageUrl := .URL }}
+<footer class="cover bottom-0 pv3 black-90" role="contentinfo" style="background-image: url('{{ $footer_image }}');">
+  <div class="flex flex-row-l flex-column-ns justify-between flex-wrap w-80 center ">
+	  <div class="order-0-l pb2-ns mt3 order-last-m w-100-m tc-m tc-ns">
 		<h3>Follow us on:</h3>
-	  	<ul class="social-follow mv3">
+	  	<ul class="social-follow mv3 overflow-hidden dib">
 	  		{{ partial "social-follow.html" . }}
 	  	</ul>
 	  </div>
-	  <div class="pb2-ns">
+  	{{ if .Site.Menus.developers }}
+	  <div class="pb2-ns mt3">
 		<h3>For developers:</h3>
-	  	<ul class="mv3">
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Introduction</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Hashback API</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Technical support</a></li>
-	  	</ul>
+        <ul class="mv3">
+          {{ range .Site.Menus.developers }}
+          <li class="fl-ns fn-l pr3-ns{{ if eq $currentPageUrl .URL }} active_item{{end}}">
+            <a href="{{ .URL }}" title="{{ .Name }} page">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
 	  </div>
-	  <div class="pb2-ns">
+	{{ end }}
+	{{ if .Site.Menus.business }}
+	  <div class="pb2-ns mt3">
 		<h3>For business:</h3>
 	  	<ul class="mv3">
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Presentation</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Join</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Benefits</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Use cases</a></li>
-	  	</ul>
+          {{ range .Site.Menus.business }}
+          <li class="fl-ns fn-l pr3-ns{{ if eq $currentPageUrl .URL }} active_item{{end}}">
+            <a href="{{ .URL }}" title="{{ .Name }} page">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
 	  </div>
-	  <div class="pb2-ns">
+	{{ end }}
+	{{ if .Site.Menus.project }}
+	  <div class="pb2-ns mt3">
 		<h3>Project:</h3>
 	  	<ul class="mv3">
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">White Paper</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Team</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Join the team</a></li>
-	  		<li class="fl-ns fn-l pr3-ns"><a href="/">Token</a></li>
+	  		{{ range .Site.Menus.project }}
+          <li class="fl-ns fn-l pr3-ns{{ if eq $currentPageUrl .URL }} active_item{{end}}">
+            <a href="{{ .URL }}" title="{{ .Name }} page">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
 	  	</ul>
 	  </div>
+	{{ end }}
   </div>
   <!-- <div>
 	  <a class="f4 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
