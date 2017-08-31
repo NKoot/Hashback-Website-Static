@@ -12,12 +12,12 @@ angular.module('access.app', [angularSanitize, angularMessages, angularRecaptcha
     	// Initialize Firebase
     	//test dev
     	var config = {
-			apiKey           : "AIzaSyB9rb6JeY1CYWc0HgFm0wLpeyvBQLFeyOQ",
-			authDomain       : "chatnbook-dev.firebaseapp.com",
-			databaseURL      : "https://chatnbook-dev.firebaseio.com",
-			projectId        : "chatnbook-dev",
-			storageBucket    : "chatnbook-dev.appspot.com",
-			messagingSenderId: "198609674690"
+			apiKey           : "AIzaSyD9RUtVQAvNRA4-lxZ8WCBfrU3aWyh8dy0",
+            authDomain       : "hashback-5377c.firebaseapp.com",
+            databaseURL      : "https://hashback-5377c.firebaseio.com",
+            projectId        : "hashback-5377c",
+            storageBucket    : "hashback-5377c.appspot.com",
+            messagingSenderId: "317555284824"
     	};
 
     	firebase.initializeApp(config);
@@ -44,7 +44,6 @@ angular.module('access.app', [angularSanitize, angularMessages, angularRecaptcha
         	var accessRequest = {
         		created: firebase.database.ServerValue.TIMESTAMP,
 				name: self.data.name,
-				phone: self.data.phone,
 				email: self.data.email
 			}
 			var requestRef = firebase.database().ref('requests');

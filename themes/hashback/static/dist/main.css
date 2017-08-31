@@ -6442,7 +6442,25 @@ footer .social-follow a {
 
 }
 
-@media all and (min-device-width : 320px)
-and (max-device-width : 736px), only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 480px) {
+    header.main_header {
+        height: 520px !important;
+    }
+    .animated_image {
+        left: 42%;
+    }
+    .orders, .about {
+        height: 1100px !important;
+    }
+    #main_logo {
+        width: 240px;
+        height: auto;
+    }
+    #logo_small {
+        width: 220px;
+        height: auto;
+    }
+    .center_content {
+        width: 320px;
+    }
 }

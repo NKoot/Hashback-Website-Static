@@ -1,23 +1,23 @@
 {{ $orders_bg := .Params.orders_bg }}
 <div class="orders cover bg-center relative main_page_text" style="background-image: url('{{ $orders_bg }}');">
-	<div class="flex flex-row justify-between center_content center tc">
-		<div class="orders_item">
+	<div class="flex flex-row flex-column-ns justify-between center_content center tc">
+		<div class="orders_item center-ns">
 			{{ partial "svg/1.svg" }}
 			<div class="orders_icon"><img src="{{ $.Site.BaseURL }}/images/3-01.png"></div>
 			<div class="orders_header f3">Become a Hashbacker</div>
 			<div class="orders_button"><a href="#">Learn more</a></div>
 		</div>
-		<div class="orders_item">
+		<div class="orders_item center-ns">
 			{{ partial "svg/2.svg" }}
 			<div class="orders_icon"><img src="{{ $.Site.BaseURL }}/images/3-02.png"></div>
 			<div class="orders_header f3">Join the Team</div>
 			<div class="orders_button"><a href="#">Learn more</a></div>
 		</div>
-		<div class="orders_item">
+		<div class="orders_item center-ns">
 			{{ partial "svg/3.svg" }}
 			<div class="orders_icon"><img src="{{ $.Site.BaseURL }}/images/3-03.png"></div>
 			<div class="orders_header f3"> Early business Access</div>
-			<div class="orders_button"><a href="/">Learn more</a></div>
+			<div class="orders_button"><a href="/request-access">Learn more</a></div>
 		</div>
 	</div>
 	<div class="absolute white additional_text w-100"><p class="center_content center lh-title f4"><span class="f2">Hashback</span> is the first decentralized, open source blockchain-based reputation system with a programmable appreciation token enabling customizeable incentives that users can redeem for tangible value.</p></div>
