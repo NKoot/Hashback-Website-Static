@@ -325,6 +325,9 @@ header.small_header {
 .submenu li:last-of-type a {
     border-right: none;
 }
+.form label {
+    color: #2D9CDB;
+}
 input[disabled] {
 	background-color: #ccc;
 }
