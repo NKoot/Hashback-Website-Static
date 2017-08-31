@@ -36,10 +36,10 @@
 </g>
 </g>
 <g id="Vector_logo2">
-<mask id="mask1_outline_ins">
+<mask id="mask1_outline_ins_logo">
 <use xlink:href="#path4_fill_logo" fill="white" transform="translate(3712 265)"/>
 </mask>
-<g mask="url(#mask1_outline_ins)" style="mix-blend-mode:overlay">
+<g mask="url(#mask1_outline_ins_logo)" style="mix-blend-mode:overlay">
 <use xlink:href="#path5_stroke_2x_logo" transform="translate(3712 265)" fill="#FFFFFF"/>
 </g>
 </g>
