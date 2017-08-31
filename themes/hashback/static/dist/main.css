@@ -6219,6 +6219,10 @@ header.small_header {
     border-right: none;
 }
 
+.form label {
+    color: #2D9CDB;
+}
+
 input[disabled] {
 	background-color: #ccc;
 }

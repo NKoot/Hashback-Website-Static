@@ -85,11 +85,11 @@ enableRobotsTXT = true
     weight = -100
     url = "/white-paper/"
 [[menu.project]]
-    name = "team"
+    name = "Team"
     weight = -90
     url = "/team/"
 [[menu.project]]
-    name = "Join the team"
+    name = "Join the Team"
     weight = -80
     url = "/join-the-team/"
 [[menu.project]]

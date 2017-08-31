@@ -1,9 +1,9 @@
-{{ $.Scratch.Add "labelClasses" "b db mb1 mt3" }}
+{{ $.Scratch.Add "labelClasses" "db mb1 mt3" }}
 {{ $.Scratch.Add "inputClasses" "w-100 f5 pv3 ph3 bg-white" }}
 
 <div ng-controller="MainCtrl as ctrl">
     <div ng-if="!ctrl.complete">
-        <form class="black-80 sans-serif" name="ctrl.acces_form">
+        <form class="black-80 w-70 center form" name="ctrl.acces_form">
 
             <label class="{{ $.Scratch.Get "labelClasses" }}"  for="name">Your name</label>
             <input type="text" id="name" name="name" class="{{ $.Scratch.Get "inputClasses" }}" placeholder=" "  aria-labelledby="name" ng-model="ctrl.data.name"/>
@@ -21,7 +21,7 @@
                 key="'6LdSMCcUAAAAALxH55dPGNFE4TZEhMsP0vW_2UO3'"
             ></div>
 
-            <input class="f3 br1-ns db w-100 mv2 white pa3 bn hover-shadow hover-bg-blue bg-animate bg-blue pointer" type="button" value="Send" ng-disabled="ctrl.acces_form.$invalid" ng-click="ctrl.saveRequest()"/>
+            <input class="f3 br4 db w-40 mv2 white pa3 bn hover-shadow hover-bg-blue bg-animate bg-blue pointer" type="button" value="Send" ng-disabled="ctrl.acces_form.$invalid" ng-click="ctrl.saveRequest()"/>
 
         </form>
     </div>
