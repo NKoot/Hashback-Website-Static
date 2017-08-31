@@ -10,7 +10,7 @@
   </div>
   <div class="flex-l textpage_bg">
     <article class="cf mv3 center_content center bg-white">
-      <img src="{{ $.Site.BaseURL }}/{{ .Params.text_image }}">
+      {{ if .Params.text_image }}<img src="{{ $.Site.BaseURL }}{{ .Params.text_image }}">{{ end }}
       <div class="nested-copy-line-height lh-copy f4 pv4 nested-links nested-img mid-gray w-80 center text_page">
         {{ .Content }}
       </div>
