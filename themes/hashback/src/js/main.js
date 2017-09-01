@@ -19,3 +19,18 @@ $('.anchor-link').on('click', function (e) {
         scrollTop: $('.main_page_text').offset().top
     }, 'slow');
 });
+
+$('.js_collapsed_button').on('click', function (e) {
+	e.preventDefault();
+	$('.js_collapsed_menu').toggle();
+});
+
+$('.js_collapsed_menu a').on('click', function (e) {
+	$('.js_collapsed_menu').hide();
+});
+
+$('body').on('click', function (e) {
+	if (e.target.id !== 'js_collapsed_button' && e.target.nodeName !== 'NAV' && e.target.nodeName !== 'LI') {
+		$('.js_collapsed_menu').hide();
+	}
+});
