@@ -4,14 +4,14 @@
   {{ $featured_image := (trim $featured_image "/") | absURL }}
   <header class="small_header cover bg-top" style="background-image: url('{{ $featured_image }}');">
     <div class="center_content center">
-      <div class="flex flex-row flex-column-m justify-between">
-        <a href="/" id="logo_small">{{ partial "svg/logo_small.svg" }}</a>
+      <div class="flex flex-row justify-between items-center">
+        <a class="pv3" href="/" id="logo_small">{{ partial "svg/logo_small.svg" }}</a>
         {{ partial "site-navigation.html" . }}
       </div>
-      <div class="tc-l ph3 ph4-ns mt4">
-        <h1 class="f2 f1-l fw2 mb0 pt2 white lh-title ttu">{{ .Title | default .Site.Title }}</h1>
+      <div class="tc ph3 ph4-ns mt2-m mt4-ns">
+        <h1 class="f2-m f3-ns f1-l fw2 mb0 pt2 white lh-title ttu">{{ .Title | default .Site.Title }}</h1>
         {{ with .Params.description  }}
-          <div class="breadcrumbs fw1 f6 f5-l white measure-wide-l center lh-copy mt4 mb0">
+          <div class="breadcrumbs fw1 f6 f5-l white measure-wide-l center lh-copy mt4 pt3-m pt3-ns mb0">
             <a href="/">Home</a> / {{ . }}
           </div>
         {{ end }}

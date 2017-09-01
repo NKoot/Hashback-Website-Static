@@ -1,24 +1,36 @@
 {{ $orders_bg := .Params.orders_bg }}
-<div class="orders cover bg-center relative main_page_text" style="background-image: url('{{ $orders_bg }}');">
+<div class="orders cover bg-top relative main_page_text"><!-- bg-center-l bg-center-m  -->
 	<div class="flex flex-row flex-column-ns justify-between center_content center tc">
 		<div class="orders_item center-ns">
 			{{ partial "svg/1.svg" }}
-			<div class="orders_icon"><img src="{{ $.Site.BaseURL }}/images/3-01.png"></div>
-			<div class="orders_header f3">Become a Hashbacker</div>
-			<div class="orders_button"><a href="#">Learn more</a></div>
+			<div class="flex flex-column justify-between center tc absolute top-2-l top-1-m top-1-ns w-100 orders_content">
+				<div class="orders_icon center"><img src="{{ $.Site.BaseURL }}/images/3-01.png"></div>
+				<div class="orders_header f3 center">Become a Hashbacker</div>
+				<div class="orders_button center"><a href="#">Learn more</a></div>
+			</div>
 		</div>
 		<div class="orders_item center-ns">
 			{{ partial "svg/2.svg" }}
-			<div class="orders_icon"><img src="{{ $.Site.BaseURL }}/images/3-02.png"></div>
-			<div class="orders_header f3">Join the Team</div>
-			<div class="orders_button"><a href="#">Learn more</a></div>
+			<div class="flex flex-column justify-between center tc absolute top-2-l top-1-m top-1-ns w-100 orders_content">
+				<div class="orders_icon center"><img src="{{ $.Site.BaseURL }}/images/3-02.png"></div>
+				<div class="orders_header f3 center">Join the Team</div>
+				<div class="orders_button center"><a href="#">Learn more</a></div>
+			</div>
 		</div>
 		<div class="orders_item center-ns">
 			{{ partial "svg/3.svg" }}
-			<div class="orders_icon"><img src="{{ $.Site.BaseURL }}/images/3-03.png"></div>
-			<div class="orders_header f3"> Early business Access</div>
-			<div class="orders_button"><a href="/request-access">Learn more</a></div>
+			<div class="flex flex-column justify-between center tc absolute top-2-l top-1-m top-1-ns w-100 orders_content">
+				<div class="orders_icon center"><img src="{{ $.Site.BaseURL }}/images/3-03.png"></div>
+				<div class="orders_header f3 center"> Early business Access</div>
+				<div class="orders_button center"><a href="/request-access">Learn more</a></div>
+			</div>
 		</div>
 	</div>
-	<div class="absolute white additional_text w-100"><p class="center_content center lh-title f4"><span class="f2">Hashback</span> is the first decentralized, open source blockchain-based reputation system with a programmable appreciation token enabling customizeable incentives that users can redeem for tangible value.</p></div>
+	<div class="absolute white additional_text w-100">
+		<p class="center_content pt3 pb0 mt0 mb0 center lh-title f4-l f5-m f4-ns">
+		<span class="f2-l f3-m f2-ns">Hashback</span> is the first decentralized blockchain based token that converts time spent performing services into a digitized crypto-asset.</p>
+
+		<p class="center_content pt3 pb0  mt0 mb0 center lh-title f4-l f5-m f4-ns">By turning time services into tokenized property Hashback eliminates intermediaries in areas where time itself is the actual service or product, or time-as-a-token. By virtue, the need for many third party intermediation services is eliminated and loyalty is built directly between the service provider and the customer.
+		</p>
+	</div>
 </div>

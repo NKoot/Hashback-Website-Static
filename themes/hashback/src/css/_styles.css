@@ -1,6 +1,6 @@
 @custom-media --breakpoint-not-small screen and (max-width: 480px);
-@custom-media --breakpoint-medium screen and (min-width: 480px) and (max-width: 1024px);
-@custom-media --breakpoint-large screen and (min-width: 1024px);
+@custom-media --breakpoint-medium screen and (min-width: 481px) and (max-width: 1024px);
+@custom-media --breakpoint-large screen and (min-width: 1025px);
 html {
     font-size: 24px;
     line-height: 1.23;
@@ -33,6 +33,12 @@ h1, h2, h3, h4 {
 header.main_header, .about {
     height: 982px !important;
 }
+.main_header {
+    background-image: url('/images/header_bg.jpg');
+}
+.about {
+        background-image: url('/images/about_bg.jpg')
+    }
 #main_logo {
     width: 599px;
     height: 396px;
@@ -47,8 +53,15 @@ header.small_header {
 .center_content {
     width: 1170px;
 }
+.button_toggle_menu {
+    width: 55px;
+    height: 55px;
+}
 .orders {
     height: 974px !important;
+}
+.orders {
+    background-image: url('/images/middle_bg.jpg')
 }
 .breadcrumbs a, .breadcrumbs a:active, .breadcrumbs a:visited {
     color: #fff;
@@ -70,39 +83,36 @@ header.small_header {
     /*fill-opacity: .8;*/
     width: 100%;
 }
+.orders_content {
+    height: 300px;
+    width: 350px;
+}
+.orders_item:first-of-type .orders_icon {
+    margin-left: 40%;
+}
 .orders_item, .about_item {
     position: relative;
     color: #fff;
 }
 .orders_item .orders_icon {
-    position: absolute;
+    /*position: absolute;
     top: 10%;
+    left: 33%;*/
     width: 30%;
-    left: 35%;
-}
-.additional_text {
-    bottom: 70px;
-}
-.about_item .about_icon {
-    width: 20%;
-}
-.about_header {
-    color: #FDEF52;
-    font-weight: bold;
 }
 .orders_item .orders_header {
     font-weight: bold;
-    position: absolute;
+    /*position: absolute;
     top: 45%;
+    left: 18%;*/
     width: 60%;
     text-align: center;
-    left: 20%;
 }
 .orders_item .orders_button {
-    position: absolute;
-    bottom: 10%;
+    /*position: absolute;
+    bottom: 15%;
+    left: 22%;*/
     width: 50%;
-    left: 25%;
     border: 1px solid #fff;
     border-radius: 20px;
     padding: 5px;
@@ -117,6 +127,16 @@ header.small_header {
 }
 .orders_item .orders_button:hover a {
     color: #3C4F95;
+}
+.additional_text {
+    bottom: 4%;
+}
+.about_item .about_icon {
+    width: 20%;
+}
+.about_header {
+    color: #FDEF52;
+    font-weight: bold;
 }
 .animation-container.force3d {
     -webkit-backface-visibility: hidden;
@@ -381,6 +401,9 @@ input::-webkit-inner-spin-button {
     color: #666;
     cursor: pointer;
 }
+footer {
+    margin-left: -2px;
+}
 footer ul li a {
 	color: #000;
 	text-decoration: none;
@@ -416,6 +439,7 @@ footer .social-follow a {
     }
     .orders_item {
         width: 372px;
+        height: 396px;
     }
     .center_content {
         width: 1170px;
@@ -495,6 +519,11 @@ footer .social-follow a {
     }
     .orders_item {
         width: 227px;
+        height: 240px;
+    }
+    .orders_content {
+        height: 190px;
+        width: 220px;
     }
     .animated_image {
         left: 48%;
@@ -507,11 +536,29 @@ footer .social-follow a {
     .about.main_page_text {
         padding-top: 2rem;
     }
-    .additional_text {
-        bottom: 40px;
-    }
     footer .social-follow a {
         float: left;
+    }
+    .collapsed_menu {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        background: #1A66C6;
+        padding: 20px;
+        width: 80%;
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, .7);
+        border: 1px solid rgba(14, 60, 117, 0.7);
+    }
+    .collapsed_menu ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 20px 0;
+    }
+    .collapsed_menu ul li:last-of-type {
+        border: none;
+    }
+    .main_header .active_item a, .small_header .active_item a {
+        border-bottom: none;
+        color: #F2C94C;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -524,30 +571,64 @@ footer .social-follow a {
         height: auto;
     }
     .center_content {
-        width: 712px;
+        width: 95%;
     }
 
 }
 @media only screen and (max-width: 480px) {
     header.main_header {
-        height: 520px !important;
+        height: 532px !important;
+    }
+    .main_header {
+        background-image: url('/images/background_320.jpg');
+    }
+    .logo {
+        padding-top: 10rem;
+    }
+    .button_toggle_menu {
+        width: 36px;
+        height: 36px;
     }
     .animated_image {
         left: 42%;
     }
-    .orders, .about {
-        height: 1100px !important;
+    .orders {
+        min-height: 1192px !important;
+        height: 1788px !important;
+    }
+    .orders {
+        background-image: url('/images/middle_bg_320.jpg')
+    }
+    .about {
+        min-height: 1192px !important;
+    }
+    .about {
+        background-image: url('/images/about_bg_320.jpg')
     }
     #main_logo {
         width: 240px;
         height: auto;
     }
     #logo_small {
-        width: 220px;
+        width: 200px;
         height: auto;
     }
     .center_content {
-        width: 320px;
+        width: 80%;
+    }
+    .additional_text {
+        bottom: 7%;
+    }
+    .additional_text {
+        bottom: 4%;
+    }
+    .orders_item {
+        width: 300px;
+        height: 340px;
+    }
+    .orders_content {
+        height: 260px;
+        width: 290px;
     }
 }
 
