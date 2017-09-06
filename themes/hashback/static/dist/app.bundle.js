@@ -58218,7 +58218,7 @@ $('.js_collapsed_menu a').on('click', function (e) {
 });
 
 $('body').on('click', function (e) {
-	if (e.target.id !== 'js_collapsed_button' && e.target.nodeName !== 'NAV' && e.target.nodeName !== 'LI') {
+	if (e.target.id !== 'js_collapsed_button' && e.target.nodeName !== 'NAV' && e.target.nodeName !== 'LI' && $('.js_collapsed_button').css('display') === 'block') {
 		$('.js_collapsed_menu').hide();
 	}
 });

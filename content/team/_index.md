@@ -1,9 +1,6 @@
 ---
-title: "team"
-header_bg: '/images/header_second.jpg'
-description: "team"
+title: "Team"
+description: "Team"
 type: page
-footer_image: '/images/footer_bg.png'
+group: "team"
 ---
-
-# Under construction
