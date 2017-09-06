@@ -3,25 +3,15 @@
 {{/* Get the current page's URL so we can compare it to the list below */}}
 {{ $currentPageUrl := .URL }}
 {{/* Get a list of this section's other pages. "RegularPages" excludes the list page    */}}
+{{ $currentSection := where .Data.Pages "Section" .Section }}
 
-{{if isset .Params "group" }}
   <div class="bg-transparent shadow-1">
-    <ul class="flex flex-row flex-column-m justify-center center_content center submenu">
-      {{ range where $.Site.Home.Sections "Params.group" .Params.group }}
-        <li class="list f6 fw2 ttu pv2 db{{ if eq $currentPageUrl .URL}} active_item{{end}}">
-          {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
-          <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
-            {{ .Title }}
-          </a>
-        </li>
-      {{ end }}
-    </ul>
+
   </div>
-{{ end }}
-  <div class="flex flex-column textpage_bg">
-    {{ if eq $currentPageUrl "/team/" }}
+  <div class="flex flex-column textpage_bg2">
+    {{ if in $currentPageUrl "team" }}
       <div class="cf mv3 center_content center flex flex-row justify-between items-start flex-wrap">
-        {{ range .Pages }}
+        {{ range $.Site.Data.team }}
            {{ partial "usercard.html" . }}
         {{ end }}
       </div>
@@ -36,4 +26,3 @@
     {{ end }}
   </div>
 {{ end }}
-

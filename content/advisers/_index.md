@@ -1,6 +1,6 @@
 ---
-title: "Join Us"
-description: "Join Us"
+title: "Advisers"
+description: "Advisers"
 type: page
 group: "team"
 ---

@@ -2,7 +2,7 @@
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
-  <header class="cover bg-bottom relative main_header">
+  <header class="cover bg-bottom relative pt3 main_header">
     <div>
       {{ partial "site-navigation.html" .}}
       <div class="tc logo center" id="main_logo">

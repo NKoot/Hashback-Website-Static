@@ -91,7 +91,7 @@ enableRobotsTXT = true
 [[menu.project]]
     name = "Join the Team"
     weight = -80
-    url = "/join-the-team/"
+    url = "/join"
 [[menu.project]]
     name = "Token"
     weight = -70
