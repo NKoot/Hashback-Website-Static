@@ -17,9 +17,7 @@
       {{ end }}
     </ul>
 {{ end }} -->
-
-{{ range where $.Site.Home.Sections "Section" .Section }}
-  {{if isset .Params "group" }}
+{{if eq $currentPageUrl "/vacancy-form/" }}
     <div class="bg-transparent shadow-1">
       <ul class="flex flex-row flex-column-m justify-center center_content center submenu">
         {{ range where $.Site.Home.Sections "Params.group" .Params.group }}
@@ -32,5 +30,21 @@
         {{ end }}
       </ul>
     </div>
+{{else}}
+  {{ range where $.Site.Home.Sections "Section" .Section }}
+    {{if isset .Params "group" }}
+      <div class="bg-transparent shadow-1">
+        <ul class="flex flex-row flex-column-m justify-center center_content center submenu">
+          {{ range where $.Site.Home.Sections "Params.group" .Params.group }}
+            <li class="list f6 fw2 ttu pv2 db{{ if eq $currentPageUrl .URL}} active_item{{end}}">
+              {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
+              <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
+                {{ .Title }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
   {{ end }}
-{{ end }}
+{{end}}

@@ -1,0 +1,12 @@
+{{ $icon_size := "32px" }}
+{{ $fill := "#ffffff" }}
+<div class="card_item  join_card flex flex-column justify-between items-start white">
+	<h4 class="flex flex-row justify-start items-center"><img src="/images/search_icon.png"> <span class="white ph2">Looking for</span></h4>
+	<div class="flex flex-row justify-start items-start pv2">
+		{{ if  .Params.photo }}<img src="{{ $.Site.BaseURL }}{{ .Params.photo }}" class="avatar">{{end}}
+		<div>
+			<h3 class="pb3"><a href="{{ .Permalink }}">{{ .Params.name }}</a></h3>
+		</div>
+	</div>
+	<div class="rounded_button center"><a href="/vacancy-form">Apply</a></div>
+</div>

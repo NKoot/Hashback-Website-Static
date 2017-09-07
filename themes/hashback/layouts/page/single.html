@@ -1,41 +1,33 @@
 {{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
-{{ $icon_size := "32px" }}
-{{ $fill := "#357edd" }}
+
 {{/* Get the current page's URL so we can compare it to the list below */}}
 {{ $currentPageUrl := .URL }}
 
-  <div class="bg-transparent shadow-1">
+  <div class="bg-transparent">
     {{ partial "menu-contextual.html" . }}
   </div>
-  <div class="fflex flex-column textpage_bg">
+  <div class="flex flex-column textpage_bg">
     {{ if eq $currentPageUrl "/team/" }}
-      <div class="cf mv3 center_content center flex flex-row justify-between items-start flex-wrap">
+      <div class="cf mv3 center_content center flex flex-row-l flex-column-m flex-column-ns justify-between items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "usercard.html" . }}
         {{ end }}
       </div>
     {{end}}
+    {{ if eq $currentPageUrl "/join/" }}
+      <div class="cf mv3 center_content center flex flex-row-l flex-column-m flex-column-ns justify-between items-start flex-wrap">
+        {{ range .Pages }}
+           {{ partial "joinuscard.html" . }}
+        {{ end }}
+      </div>
+    {{end}}
     {{ if .Content }}
-    <article class="cf mv3 center_content center bg-white">
+    <article class="cf mv3 center_content center bg-white {{ if or (eq $currentPageUrl "/request-access/") (eq $currentPageUrl "/vacancy-form/") }} form_page{{ end }}">
       {{ if .Params.text_image }}<img src="{{ $.Site.BaseURL }}{{ .Params.text_image }}">{{ end }}
-      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links mid-gray w-80 center text_page">
-        <div class="flex flex-row justify-start items-start pv2">
-          {{ if  .Params.photo }}<img src="{{ $.Site.BaseURL }}{{ .Params.photo }}" class="avatar w-30 mr3">{{end}}
-          <div>
-            <h3 class="pb3">{{ .Params.name }}</h3>
-            <p>{{ .Params.position }}</p>
-          </div>
-        </div>
-        <div class="social_buttons pt4">
-
-        {{ range $key, $value := .Params.social}}
-          <a href="{{ $value }}" class="social_item" title={{$key}}>
-          {{ $image := (trim $key "\"") }}
-          {{ partial (print "svg/" $image ".svg") (dict "size" $icon_size "fill" $fill) }}
-            </a>
-        {{end}}
-        </div>
+      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links mid-gray w-80-l w-80-m w-90-ns center text_page">
+        {{ if in $currentPageUrl "/team/" }}  <a href="/team/">BACK</a>{{ end }}
+        {{ if in $currentPageUrl "/team/" }} {{ partial "profile.html" . }} {{ end }}
         {{ .Content }}
       </div>
     </article>

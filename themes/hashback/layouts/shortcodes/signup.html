@@ -3,7 +3,7 @@
 
 <div ng-controller="MainCtrl as ctrl">
     <div ng-if="!ctrl.complete">
-        <form class="black-80 w-70 center form" name="ctrl.acces_form">
+        <form class="black-80 w-70-l w-100-m w-100-ns center form" name="ctrl.acces_form">
 
             <label class="{{ $.Scratch.Get "labelClasses" }}"  for="name">Your name</label>
             <input type="text" id="name" name="name" class="{{ $.Scratch.Get "inputClasses" }}" placeholder=" "  aria-labelledby="name" ng-model="ctrl.data.name"/>
