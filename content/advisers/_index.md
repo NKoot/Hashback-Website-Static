@@ -8,7 +8,7 @@ weight: 20
 ---
 
 
-# Under construction2
+# Under construction
 
 ![test picture](/images/text_image.jpg)
 
