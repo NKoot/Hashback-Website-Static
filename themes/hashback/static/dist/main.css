@@ -5899,6 +5899,7 @@ header.main_header, .about {
 #main_logo {
     width: 599px;
     height: 396px;
+    opacity: .9;
 }
 
 header.small_header {
