@@ -35,9 +35,9 @@
       {{- template "_internal/schema.html" . -}}
       {{- template "_internal/twitter_cards.html" . -}}
 
-      <!-- {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }} -->
-        {{ template "_internal/google_analytics.html" . }}
-      <!-- {{ end }} -->
+      {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+        {{ template "_internal/google_analytics_async.html" . }}
+      {{ end }}
   </head>
 
   <body class="main_bg" ng-app="access.app">
