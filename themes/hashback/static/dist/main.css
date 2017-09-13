@@ -5960,6 +5960,7 @@ main {
 .orders_content {
     height: 300px;
     width: 350px;
+    top: 2rem;
 }
 
 .orders_item:first-of-type .orders_icon {
@@ -6082,7 +6083,7 @@ main {
 .text_page h1, .text_page h2, .text_page h3 {
     color: #000;
     margin: 0;
-    padding: 1rem 0;
+    padding: 1.5rem 0 1rem;
 }
 
 .text_page h1 {
@@ -6102,6 +6103,10 @@ main {
     margin: 0;
 }
 
+.text_page h1 + p, .text_page h2 + p, .text_page h3 + p {
+    padding-top: 0;
+}
+
 .text_page ul {
     list-style: disc;
     margin-left: 45px;
@@ -6112,9 +6117,9 @@ main {
     width: 100%;
 }
 
-.text_page table * {
+.text_page table td, .text_page table th {
     text-align: left;
-    padding: .5rem 1rem;
+    padding: 1rem;
 }
 
 .text_page table caption {
@@ -6403,12 +6408,13 @@ footer .social-follow a img {
     height: 2rem;
 }
 
-footer .social-follow div {
+footer .social-follow a {
     float: left;
+    display: block;
 }
 
-footer .social-follow a {
-    display: block;
+footer .social-follow a:nth-child(4n) {
+    clear: both;
 }
 
 .google_form {
@@ -6556,8 +6562,8 @@ footer .social-follow a {
     .about.main_page_text {
         padding-top: 2rem;
     }
-    footer .social-follow a {
-        float: left;
+    footer .social-follow a:nth-child(4n) {
+        clear: none;
     }
     .collapsed_menu {
         position: absolute;
@@ -6597,6 +6603,15 @@ footer .social-follow a {
     .card_item {
         width: 44%;
         height: 222px;
+    }
+    .orders_content {
+        top: .7rem;
+    }
+    .orders_item .orders_header {
+        width: 90%;
+    }
+    .orders_item .orders_icon {
+        width: 24%;
     }
 
 }
@@ -6658,6 +6673,10 @@ footer .social-follow a {
     .orders_content {
         height: 260px;
         width: 290px;
+        top: 1rem;
+    }
+    .orders_item .orders_icon {
+        width: 30%;
     }
     .card_item {
         width: 100%;
