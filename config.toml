@@ -12,14 +12,14 @@ enableRobotsTXT = true
 
 [params]
   description = "Hashback"
-  facebook = "https://www.facebook.com"
-  twitter = "https://www.twitter.com"
-  medium = "https://www.mwdium.com"
-  github = "https://www.github.com"
-  bitcoin = "https://www.bitcoin.com"
-  telegram = "https://www.telegram.com"
+  facebook = "https://www.facebook.com/hashback.org/"
+  twitter = "https://twitter.com/Hash_back"
+  medium = "https://medium.com/hashback"
+  github = "https://github.com/hashback"
+  bitcoin = ""
+  telegram = "https://t.me/Hback"
   instagram = ""
-  youtube = ""
+  youtube = "https://www.youtube.com/channel/UCMD-YhtX3AAQ-HW2JpJCJUg"
   featured_image = "/images/logo.png"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
@@ -44,7 +44,7 @@ enableRobotsTXT = true
 [[menu.top]]
     name = "GitHub"
     weight = -70
-    url = "/github/"
+    url = "https://github.com/hashback"
 [[menu.top]]
     name = "EN"
     weight = -60
