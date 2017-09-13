@@ -1,98 +1,92 @@
-title = "Hashback"
-baseURL = "https://www.hashback.org"
-languageCode = "en-us"
-theme = "hashback"
-
-MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
+MetaDataFormat = "yaml"
+Paginate = 3
 SectionPagesMenu = "main"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = "UA-106361741-1"
+baseURL = "https://www.hashback.org"
 enableRobotsTXT = true
-
+languageCode = "en-us"
+theme = "hashback"
+title = "Hashback"
+[[menu.business]]
+name = "Use cases"
+url = "/use-cases/"
+weight = -70
+[[menu.business]]
+name = "Benefits"
+url = "/benefits/"
+weight = -80
+[[menu.business]]
+name = "Join"
+url = "/join/"
+weight = -90
+[[menu.business]]
+name = "Presentation"
+url = "/presentation/"
+weight = -100
+[[menu.developers]]
+name = "Technical support"
+url = "/support/"
+weight = -80
+[[menu.developers]]
+name = "Hashback API"
+url = "/api/"
+weight = -90
+[[menu.developers]]
+name = "Introduction"
+url = "/introduction/"
+weight = -100
+[[menu.project]]
+name = "Token"
+url = "/token/"
+weight = -70
+[[menu.project]]
+name = "Join the Team"
+url = "/join"
+weight = -80
+[[menu.project]]
+name = "Team"
+url = "/team/"
+weight = -90
+[[menu.project]]
+name = "White Paper"
+url = "/white-paper/"
+weight = -100
+[[menu.top]]
+name = "EN"
+url = "/lang/"
+weight = -60
+[[menu.top]]
+name = "GitHub"
+url = "/github/"
+weight = -70
+[[menu.top]]
+name = "Blog"
+url = "/blog/"
+weight = -80
+[[menu.top]]
+name = "Development roadmap"
+url = "/development-roadmap/"
+weight = -90
+[[menu.top]]
+name = "White paper"
+url = "/white-paper/"
+weight = -100
+[[menu.top]]
+identifier = "executive"
+name = "Executive summary"
+url = "/executive-summary/"
+weight = -110
 [params]
-  description = "Hashback"
-  facebook = "https://www.facebook.com"
-  twitter = "https://www.twitter.com"
-  medium = "https://www.mwdium.com"
-  github = "https://www.github.com"
-  bitcoin = "https://www.bitcoin.com"
-  telegram = "https://www.telegram.com"
-  instagram = ""
-  youtube = ""
-  featured_image = "/images/logo.png"
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-
-[[menu.top]]
-    name = "Executive summary"
-    weight = -110
-    url = "/executive-summary/"
-    identifier = "executive"
-[[menu.top]]
-    name = "White paper"
-    weight = -100
-    url = "/white-paper/"
-[[menu.top]]
-    name = "Development roadmap"
-    weight = -90
-    url = "/development-roadmap/"
-[[menu.top]]
-    name = "Blog"
-    weight = -80
-    url = "/blog/"
-[[menu.top]]
-    name = "GitHub"
-    weight = -70
-    url = "/github/"
-[[menu.top]]
-    name = "EN"
-    weight = -60
-    url = "/lang/"
-
-[[menu.developers]]
-    name = "Introduction"
-    weight = -100
-    url = "/introduction/"
-[[menu.developers]]
-    name = "Hashback API"
-    weight = -90
-    url = "/api/"
-[[menu.developers]]
-    name = "Technical support"
-    weight = -80
-    url = "/support/"
-
-[[menu.business]]
-    name = "Presentation"
-    weight = -100
-    url = "/presentation/"
-[[menu.business]]
-    name = "Join"
-    weight = -90
-    url = "/join/"
-[[menu.business]]
-    name = "Benefits"
-    weight = -80
-    url = "/benefits/"
-[[menu.business]]
-    name = "Use cases"
-    weight = -70
-    url = "/use-cases/"
-
-[[menu.project]]
-    name = "White Paper"
-    weight = -100
-    url = "/white-paper/"
-[[menu.project]]
-    name = "Team"
-    weight = -90
-    url = "/team/"
-[[menu.project]]
-    name = "Join the Team"
-    weight = -80
-    url = "/join"
-[[menu.project]]
-    name = "Token"
-    weight = -70
-    url = "/token/"
+background_color_class = "bg-black"
+bitcoin = "https://www.bitcoin.org"
+description = "Hashback"
+facebook = "https://www.facebook.com/hashback.org"
+featured_image = "/images/logo.png"
+github = "https://www.github.com/hashback"
+instagram = ""
+medium = "https://medium.com/hashback"
+telegram = "https://t.me/Hback"
+twitter = "https://twitter.com/Hash_back"
+youtube = "https://www.youtube.com/channel/UCMD-YhtX3AAQ-HW2JpJCJUg"
