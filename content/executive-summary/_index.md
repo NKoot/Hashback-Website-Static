@@ -6,6 +6,5 @@ type: page
 
 ---
 Please download Hashback Executive Summary
-(English version)
 
-Here
+[download English Version 2.1](/docs/HASHBACK — Executive summary v2.1.pdf)
