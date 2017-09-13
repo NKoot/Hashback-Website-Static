@@ -1,8 +1,11 @@
 ---
-title: "Executive summary"
-description: "Executive summary"
+description: Executive summary
+text_image: ''
+title: Executive summary
 type: page
-text_image: '/images/text_image.jpg'
----
 
-# Under construction
+---
+Please download Hashback Executive Summary
+(English version)
+
+Here
