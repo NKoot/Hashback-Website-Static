@@ -2,7 +2,6 @@ DefaultContentLanguage = "en"
 MetaDataFormat = "yaml"
 Paginate = 3
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = "UA-106361741-1"
 baseURL = "https://www.hashback.org"
 enableRobotsTXT = true
