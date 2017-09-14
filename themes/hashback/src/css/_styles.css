@@ -3,7 +3,7 @@
 @custom-media --breakpoint-large screen and (min-width: 1025px);
 html {
     font-size: 24px;
-    line-height: 1.23;
+    line-height: 1.5;
 }
 body {
     font-family: Roboto, arial, 'helvetica neue', helvetica,
@@ -76,6 +76,9 @@ main {
 .center_content {
     width: 1170px;
 }
+.textpage_bg .bg-white {
+    width: 62%;
+}
 .button_toggle_menu {
     width: 55px;
     height: 55px;
@@ -108,7 +111,8 @@ main {
 }
 .orders_content {
     height: 300px;
-    width: 350px;
+    height: 78%;
+    width: 95%;
     top: 2rem;
 }
 .orders_item:first-of-type .orders_icon {
@@ -129,14 +133,15 @@ main {
     /*position: absolute;
     top: 45%;
     left: 18%;*/
-    width: 60%;
+    width: 90%;
     text-align: center;
 }
 .rounded_button {
     /*position: absolute;
     bottom: 15%;
     left: 22%;*/
-    width: 50%;
+    min-width: 50%;
+    max-width: 90%;
     border: 1px solid #fff;
     border-radius: 20px;
     padding: 0;
@@ -147,7 +152,7 @@ main {
     color: #fff;
     text-decoration: none;
     display: block;
-    padding: 5px;
+    padding: 8px;
 }
 .rounded_button:hover {
     background: #fff;
@@ -156,14 +161,22 @@ main {
     color: #3C4F95 !important;
 }
 .additional_text {
-    bottom: 4%;
+    bottom: 10%;
 }
 .about_item .about_icon {
-    width: 20%;
+    width: 15%;
 }
-.about_header {
+.about_item .about_icon svg {
+    width: 100%;
+}
+.about_header, .about_header a {
     color: #FDEF52;
     font-weight: bold;
+    text-decoration: none;
+}
+.about_text a {
+    color: #fff;
+    text-decoration: none;
 }
 .animation-container.force3d {
     -webkit-backface-visibility: hidden;
@@ -229,9 +242,28 @@ main {
 .text_page h1 + p, .text_page h2 + p, .text_page h3 + p {
     padding-top: 0;
 }
-.text_page ul {
+.text_page ul:not(.submenu) {
     list-style: disc;
     margin-left: 45px;
+}
+.text_page .submenu {
+    overflow: hidden;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+.text_page .submenu li {
+    padding: 5px 0;
+    margin: 0 5px;
+}
+.text_page .submenu li a {
+    padding: 5px;
+    color: #666;
+}
+.text_page .submenu li:not(.active_item):hover {
+    border-bottom: 2px solid #F2C94C;
+}
+.text_page .submenu .active_item a {
+    cursor: default;
 }
 .text_page table {
     border-collapse: collapse;
@@ -498,11 +530,17 @@ footer .social-follow a:nth-child(4n) {
 
 }
 @media only screen and (min-width: 1920px) {
+    html {
+        font-size: 20px;
+    }
     .center_content {
-        width: 1640px;
+        width: 1440px;
     }
     header.small_header {
         height: 300px;
+    }
+    header.small_header h1 {
+        margin-top: 1rem;
     }
     .animated_image {
         left: 49%;
@@ -511,13 +549,19 @@ footer .social-follow a:nth-child(4n) {
         width: 30%;
         height: 300px;
     }
+    .orders_item {
+        width: 32%;
+    }
 }
 @media only screen and (max-width: 1920px) {
     html {
-        font-size: 20px;
+        font-size: 16px;
     }
     header.main_header, .about {
         height: 982px !important;
+    }
+    header.small_header {
+        height: 229px;
     }
     #main_logo {
         width: 599px;
@@ -527,11 +571,20 @@ footer .social-follow a:nth-child(4n) {
         height: 974px !important;
     }
     .orders_item {
-        width: 372px;
-        height: 396px;
+        width: 400px;
+        height: 426px;
+    }
+    .orders_content {
+        height: 332px;
+        height: 78%;
+        width: 95%;
+        top: 2rem;
     }
     .center_content {
-        width: 1170px;
+        width: 1270px;
+    }
+    .textpage_bg .bg-white {
+        width: 62%;
     }
     .animated_image {
         left: 49%;
@@ -552,8 +605,21 @@ footer .social-follow a:nth-child(4n) {
         width: 500px;
         height: auto;
     }
+    .center_content {
+        width: 1170px;
+    }
     .orders {
         height: 731px !important;
+    }
+    .orders_item {
+        width: 372px;
+        height: 396px;
+    }
+    .orders_content {
+        height: 308px;
+        height: 78%;
+        width: 95%;
+        top: 2rem;
     }
     .animated_image {
         left: 48.5%;
@@ -587,6 +653,13 @@ footer .social-follow a:nth-child(4n) {
     .orders {
         height: 649px !important;
     }
+    .orders_item {
+        width: 352px;
+        height: 375px;
+    }
+    .additional_text {
+        bottom: 8%;
+    }
     .animated_image {
         left: 48%;
         bottom: 5%;
@@ -606,16 +679,23 @@ footer .social-follow a:nth-child(4n) {
     .orders {
         height: 642px !important;
     }
+    .main_page_text {
+        padding-top: 6rem;
+    }
     .orders_item {
-        width: 227px;
-        height: 240px;
+        width: 30%;
+        height: 278px;
+        height: auto;
     }
     .orders_content {
-        height: 190px;
-        width: 220px;
+        height: 216px;
+        height: 78%;
+    }
+    .orders_item .orders_icon {
+        width: 27%;
     }
     .animated_image {
-        left: 48%;
+        left: 47%;
         bottom: 5%;
     }
     .logo {
@@ -637,6 +717,7 @@ footer .social-follow a:nth-child(4n) {
         width: 80%;
         box-shadow: -5px 5px 10px rgba(0, 0, 0, .7);
         border: 1px solid rgba(14, 60, 117, 0.7);
+        z-index: 1000;
     }
     .collapsed_menu ul li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -662,12 +743,22 @@ footer .social-follow a:nth-child(4n) {
     .center_content {
         width: 95%;
     }
+    .textpage_bg .bg-white {
+        width: 80%;
+    }
     .card_item {
         width: 44%;
         height: 222px;
     }
     .orders_content {
         top: .7rem;
+        height: 182px;
+        height: 78%;
+    }
+    .orders_item {
+        width: 30%;
+        height: 234px;
+        height: auto;
     }
     .orders_item .orders_header {
         width: 90%;
@@ -675,7 +766,9 @@ footer .social-follow a:nth-child(4n) {
     .orders_item .orders_icon {
         width: 24%;
     }
-
+    .rounded_button a {
+        padding: 5px;
+    }
 }
 @media only screen and (max-width: 480px) {
     header.main_header {
@@ -722,10 +815,7 @@ footer .social-follow a:nth-child(4n) {
         width: 100%;
     }
     .additional_text {
-        bottom: 7%;
-    }
-    .additional_text {
-        bottom: 4%;
+        bottom: 6%;
     }
     .orders_item {
         width: 300px;
