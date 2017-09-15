@@ -1,7 +1,7 @@
 {
   "department": "team",
   "name": "Vasiliy Selivanov",
-  "photo": "/uploads/2017/09/14/Vasiliy.png",
+  "photo": "/uploads/2017/09/15/Vasiliy.png",
   "position": "Contributing to network architecture, project infrastructure and blockchain programming",
   "social": {
     "facebook": "",
