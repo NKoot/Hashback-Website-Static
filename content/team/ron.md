@@ -1,7 +1,7 @@
 {
   "department": "team",
   "name": "Ron Millow",
-  "photo": "/uploads/2017/09/15/Ron.png",
+  "photo": "/uploads/2017/09/15/Ron-1.png",
   "position": "Co-Founder, contributing to market capture, business development and telling the universe about Hashback",
   "social": {
     "facebook": "https://facebook.com",
