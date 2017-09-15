@@ -1,15 +1,15 @@
 {{ $orders_bg := .Params.orders_bg }}
 <div class="orders cover bg-top relative main_page_text"><!-- bg-center-l bg-center-m  -->
 	<div class="flex flex-row flex-column-ns justify-between center_content center tc">
-		<div class="orders_item center-ns">
+		<div class="orders_item center-ns" data-link="/hashbackers/">
 			{{ partial "svg/1.svg" }}
 			<div class="flex flex-column justify-between center tc absolute top-2-l top-1-m top-1-ns w-100 orders_content">
 				<div class="orders_icon center"><img src="{{ $.Site.BaseURL }}/images/3-01.png"></div>
 				<div class="orders_header center"><h3 class="f2 f4-m f2-ns">Hashbackers</h3><p class="f4 f5-m f4-ns">convertible pre-ITG program</p></div>
-				<div class="rounded_button center"><a href="/hashbackers">Learn more</a></div>
+				<div class="rounded_button center"><a href="/hashbackers/">Learn more</a></div>
 			</div>
 		</div>
-		<div class="orders_item center-ns">
+		<div class="orders_item center-ns" data-link="/advisors/">
 			{{ partial "svg/3.svg" }}
 			<div class="flex flex-column justify-between center tc absolute top-2-l top-1-m top-1-ns w-100 orders_content">
 				<div class="orders_icon center"><img src="{{ $.Site.BaseURL }}/images/3-03.png"></div>
@@ -17,12 +17,12 @@
 				<div class="rounded_button center"><a href="/advisors/">Learn more</a></div>
 			</div>
 		</div>
-		<div class="orders_item center-ns">
+		<div class="orders_item center-ns" data-link="/partner-mine/">
 			{{ partial "svg/2.svg" }}
 			<div class="flex flex-column justify-between center tc absolute top-2-l top-1-m top-1-ns w-100 orders_content">
 				<div class="orders_icon center"><img src="{{ $.Site.BaseURL }}/images/3-02.png"></div>
 				<div class="orders_header f3 center"><h3 class="f2 f4-m f2-ns">Partner Mine</h3><p class="f4 f5-m f4-ns">list your services over Hashback to mine new revenue.</p></div>
-				<div class="rounded_button center"><a href="/partner-mine">Join us</a></div>
+				<div class="rounded_button center"><a href="/partner-mine/">Join us</a></div>
 			</div>
 		</div>
 	</div>

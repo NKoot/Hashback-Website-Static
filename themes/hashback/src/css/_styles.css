@@ -126,24 +126,18 @@ main {
     position: relative;
     color: #fff;
 }
+.orders_item {
+    cursor: pointer;
+}
 .orders_item .orders_icon {
-    /*position: absolute;
-    top: 10%;
-    left: 33%;*/
     width: 30%;
 }
 .orders_item .orders_header {
     font-weight: bold;
-    /*position: absolute;
-    top: 45%;
-    left: 18%;*/
     width: 90%;
     text-align: center;
 }
 .rounded_button {
-    /*position: absolute;
-    bottom: 15%;
-    left: 22%;*/
     min-width: 50%;
     max-width: 90%;
     border: 1px solid #fff;

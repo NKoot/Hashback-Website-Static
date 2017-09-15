@@ -39,3 +39,8 @@ $('body').on('click', function (e) {
 });
 
 $('.text_page table').wrap('<div class="table_responsive"></div>');
+
+$('.orders_item').on('click', function (e) {
+	e.preventDefault();
+	window.location.href = $(this).attr('data-link');
+})
