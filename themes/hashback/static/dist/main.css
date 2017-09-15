@@ -5884,8 +5884,13 @@ input {
 	background-color: #1A66C6;
 }
 
-header.main_header, .about {
+header.main_header {
     height: 982px !important;
+}
+
+.about {
+    min-height: 982px !important;
+    height: auto !important;
 }
 
 .main_header {
@@ -5893,8 +5898,8 @@ header.main_header, .about {
 }
 
 .about {
-        background-image: url('/images/about_bg.jpg')
-    }
+    background-image: url('/images/about_bg.jpg')
+}
 
 #main_logo {
     width: 599px;
@@ -6036,12 +6041,17 @@ main {
 .about_header, .about_header a {
     color: #FDEF52;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+.about_text {
+    clear: both;
 }
 
 .about_text a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 .animation-container.force3d {
@@ -6505,8 +6515,12 @@ footer .social-follow a:nth-child(4n) {
     html {
         font-size: 16px;
     }
-    header.main_header, .about {
+    header.main_header {
         height: 982px !important;
+    }
+    .about {
+        min-height: 982px !important;
+        height: auto !important;
     }
     header.small_header {
         height: 229px;
@@ -6547,8 +6561,12 @@ footer .social-follow a:nth-child(4n) {
     html {
         font-size: 16px;
     }
-    header.main_header, .about {
+    header.main_header {
         height: 737px !important;
+    }
+    .about {
+        min-height: 737px !important;
+        height: auto !important;
     }
     #main_logo {
         width: 500px;
@@ -6581,8 +6599,12 @@ footer .social-follow a:nth-child(4n) {
 }
 
 @media only screen and (max-width: 1366px) {
-    header.main_header, .about {
+    header.main_header {
         height: 698px !important;
+    }
+    .about {
+        min-height: 698px !important;
+        height: auto !important;
     }
     .orders {
         height: 693px !important;
@@ -6598,8 +6620,12 @@ footer .social-follow a:nth-child(4n) {
 }
 
 @media only screen and (max-width: 1280px) {
-    header.main_header, .about {
+    header.main_header {
         height: 655px !important;
+    }
+    .about {
+        min-height: 655px !important;
+        height: auto !important;
     }
     .orders {
         height: 649px !important;
@@ -6622,8 +6648,12 @@ footer .social-follow a:nth-child(4n) {
 }
 
 @media only screen and (max-width: 1024px) {
-    header.main_header, .about {
+    header.main_header {
         height: 646px !important;
+    }
+    .about {
+        min-height: 646px !important;
+        height: auto !important;
     }
     .center_content {
         width: 870px;
@@ -6774,9 +6804,15 @@ footer .social-follow a:nth-child(4n) {
     }
     .about {
         min-height: 1192px !important;
+        height: auto !important;
     }
     .about {
         background-image: url('/images/about_bg_320.jpg')
+    }
+    .about_item .about_icon {
+        float: left;
+        margin-right: 1rem;
+        margin-top: .7rem;
     }
     #main_logo {
         width: 240px;
