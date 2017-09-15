@@ -58230,6 +58230,11 @@ $('.orders_item').on('click', function (e) {
 	window.location.href = $(this).attr('data-link');
 });
 
+$('.card_item.user_card').on('click', function (e) {
+	e.preventDefault();
+	window.location.href = $(this).attr('data-link');
+});
+
 /***/ }),
 /* 159 */
 /***/ (function(module, exports, __webpack_require__) {
