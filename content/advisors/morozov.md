@@ -1,12 +1,12 @@
 {
   "department": "advisors",
-  "name": "Jennifer Bianchi",
+  "name": "Eugene Morozov",
   "photo": "/uploads/2017/09/15/Yuri-Ivanovich-1.png",
-  "position": "Entrepreneur, model & spokeswoman extraordinaire",
+  "position": "Champion financial advisor & investment strategist",
   "social": {
     "facebook": "",
     "twitter": ""
   },
-  "title": "Jennifer Bianch",
+  "title": "Eugene Morozov",
   "type": "page"
 }
