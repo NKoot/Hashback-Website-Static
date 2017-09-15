@@ -1,13 +1,13 @@
 {
-  "title": "Ron Millow",
-  "name": "Ron Millow",
-  "photo": "/uploads/2017/09/14/Ron.png",
   "department": "team",
+  "name": "Ron Millow",
+  "photo": "/uploads/2017/09/15/Ron.png",
   "position": "Co-Founder, contributing to market capture, business development and telling the universe about Hashback",
   "social": {
     "facebook": "https://facebook.com",
     "twitter": "https://twitter.com"
   },
+  "title": "Ron Millow",
   "type": "page"
 }
 Honestly, we have no idea how this guy got here, but he refuses to leave so we gave him a desk and a chair. And what do you know, apparently looks can be deceiving.
