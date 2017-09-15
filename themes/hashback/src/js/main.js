@@ -37,3 +37,15 @@ $('body').on('click', function (e) {
 		$('.js_collapsed_menu').hide();
 	}
 });
+
+$('.text_page table').wrap('<div class="table_responsive"></div>');
+
+$('.orders_item').on('click', function (e) {
+	e.preventDefault();
+	window.location.href = $(this).attr('data-link');
+});
+
+$('.card_item.user_card').on('click', function (e) {
+	e.preventDefault();
+	window.location.href = $(this).attr('data-link');
+});

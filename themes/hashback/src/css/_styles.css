@@ -49,15 +49,19 @@ input {
 .main_bg {
 	background-color: #1A66C6;
 }
-header.main_header, .about {
+header.main_header {
     height: 982px !important;
+}
+.about {
+    min-height: 982px !important;
+    height: auto !important;
 }
 .main_header {
     background-image: url('/images/header_bg.jpg');
 }
 .about {
-        background-image: url('/images/about_bg.jpg')
-    }
+    background-image: url('/images/about_bg.jpg')
+}
 #main_logo {
     width: 599px;
     height: 396px;
@@ -122,24 +126,18 @@ main {
     position: relative;
     color: #fff;
 }
+.orders_item {
+    cursor: pointer;
+}
 .orders_item .orders_icon {
-    /*position: absolute;
-    top: 10%;
-    left: 33%;*/
     width: 30%;
 }
 .orders_item .orders_header {
     font-weight: bold;
-    /*position: absolute;
-    top: 45%;
-    left: 18%;*/
     width: 90%;
     text-align: center;
 }
 .rounded_button {
-    /*position: absolute;
-    bottom: 15%;
-    left: 22%;*/
     min-width: 50%;
     max-width: 90%;
     border: 1px solid #fff;
@@ -161,7 +159,7 @@ main {
     color: #3C4F95 !important;
 }
 .additional_text {
-    bottom: 10%;
+    bottom: 5%;
 }
 .about_item .about_icon {
     width: 15%;
@@ -172,11 +170,15 @@ main {
 .about_header, .about_header a {
     color: #FDEF52;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
+}
+.about_text {
+    clear: both;
 }
 .about_text a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 .animation-container.force3d {
     -webkit-backface-visibility: hidden;
@@ -292,13 +294,17 @@ main {
 .text_page table th {
     font-weight: 400;
 }
+.table_responsive {
+    overflow: visible;
+}
 .card_item  {
     /*width: 358px;*/
     width: 30%;
     height: 273px;
     padding: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .2);
-    margin: 1rem;
+    margin: 1%;
+    cursor: pointer;
 }
 .user_card:nth-child(3n+1) {
     background: url('/images/1.png') 0 0 no-repeat;
@@ -516,7 +522,7 @@ footer .social-follow a {
     float: left;
     display: block;
 }
-footer .social-follow a:nth-child(4n) {
+footer .social-follow a:nth-child(3n+1) {
     clear: both;
 }
 .google_form {
@@ -552,13 +558,20 @@ footer .social-follow a:nth-child(4n) {
     .orders_item {
         width: 32%;
     }
+    .additional_text {
+        bottom: 10%;
+    }
 }
 @media only screen and (max-width: 1920px) {
     html {
         font-size: 16px;
     }
-    header.main_header, .about {
+    header.main_header {
         height: 982px !important;
+    }
+    .about {
+        min-height: 982px !important;
+        height: auto !important;
     }
     header.small_header {
         height: 229px;
@@ -598,8 +611,12 @@ footer .social-follow a:nth-child(4n) {
     html {
         font-size: 16px;
     }
-    header.main_header, .about {
+    header.main_header {
         height: 737px !important;
+    }
+    .about {
+        min-height: 737px !important;
+        height: auto !important;
     }
     #main_logo {
         width: 500px;
@@ -631,8 +648,12 @@ footer .social-follow a:nth-child(4n) {
     }
 }
 @media only screen and (max-width: 1366px) {
-    header.main_header, .about {
+    header.main_header {
         height: 698px !important;
+    }
+    .about {
+        min-height: 698px !important;
+        height: auto !important;
     }
     .orders {
         height: 693px !important;
@@ -647,8 +668,12 @@ footer .social-follow a:nth-child(4n) {
     }
 }
 @media only screen and (max-width: 1280px) {
-    header.main_header, .about {
+    header.main_header {
         height: 655px !important;
+    }
+    .about {
+        min-height: 655px !important;
+        height: auto !important;
     }
     .orders {
         height: 649px !important;
@@ -658,7 +683,7 @@ footer .social-follow a:nth-child(4n) {
         height: 375px;
     }
     .additional_text {
-        bottom: 8%;
+        bottom: 4%;
     }
     .animated_image {
         left: 48%;
@@ -670,8 +695,12 @@ footer .social-follow a:nth-child(4n) {
     }
 }
 @media only screen and (max-width: 1024px) {
-    header.main_header, .about {
+    header.main_header {
         height: 646px !important;
+    }
+    .about {
+        min-height: 646px !important;
+        height: auto !important;
     }
     .center_content {
         width: 870px;
@@ -705,7 +734,7 @@ footer .social-follow a:nth-child(4n) {
     .about.main_page_text {
         padding-top: 2rem;
     }
-    footer .social-follow a:nth-child(4n) {
+    footer .social-follow a:nth-child(3n+1) {
         clear: none;
     }
     .collapsed_menu {
@@ -777,6 +806,30 @@ footer .social-follow a:nth-child(4n) {
     .main_header {
         background-image: url('/images/background_320.jpg');
     }
+    .textpage_bg .bg-white {
+        width: 96%;
+    }
+    .table_responsive {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll
+    }
+    .table_responsive::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    .table_responsive::-webkit-scrollbar
+    {
+        height: 6px;
+        background-color: #F5F5F5;
+    }
+
+    .table_responsive::-webkit-scrollbar-thumb
+    {
+        background-color: #1A66C6;
+    }
     .logo {
         padding-top: 10rem;
     }
@@ -796,9 +849,15 @@ footer .social-follow a:nth-child(4n) {
     }
     .about {
         min-height: 1192px !important;
+        height: auto !important;
     }
     .about {
         background-image: url('/images/about_bg_320.jpg')
+    }
+    .about_item .about_icon {
+        float: left;
+        margin-right: 1rem;
+        margin-top: .7rem;
     }
     #main_logo {
         width: 240px;
@@ -809,13 +868,13 @@ footer .social-follow a:nth-child(4n) {
         height: auto;
     }
     .center_content {
-        width: 80%;
+        width: 90%;
     }
     .center_content.form_page {
         width: 100%;
     }
     .additional_text {
-        bottom: 6%;
+        bottom: 10px;
     }
     .orders_item {
         width: 300px;

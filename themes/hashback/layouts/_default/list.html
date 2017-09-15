@@ -19,7 +19,7 @@
   </div>
 {{ end }}
   <div class="flex flex-column textpage_bg">
-    {{ if eq $currentPageUrl "/team/" }}
+    {{ if or (eq $currentPageUrl "/team/") (eq $currentPageUrl "/advisors/") }}
       <div class="cf mv3 center_content center flex flex-row-l flex-row-m flex-column-ns justify-start-l justify-start-m justify-between-ns items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "usercard.html" . }}

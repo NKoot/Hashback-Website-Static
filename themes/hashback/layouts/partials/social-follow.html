@@ -7,6 +7,7 @@
       {{ partial "svg/facebook.svg" (dict "size" $icon_size "fill" $fill) }}
     </a>
   {{ end }}
+
   {{ with .Site.Params.twitter }}
     <a href="{{ . }}" class="link-transition twitter link dib z-999 pt3 pt0-l mr4 mb3" title="Twitter link">
       <!-- <img src="{{ $.Site.BaseURL }}/images/twitter.png"> -->
@@ -48,5 +49,11 @@
     <a href="{{ . }}" class="link-transition telegram link dib z-999 pt3 pt0-l mr4 mb3" title="telegram link">
       <!-- <img src="{{ $.Site.BaseURL }}/images/telegram.png"> -->
       {{ partial "svg/telegram.svg" (dict "size" $icon_size "fill" $fill) }}
+    </a>
+  {{ end }}
+
+  {{ with .Site.Params.reddit }}
+    <a href="{{ . }}" class="link-transition reddit link dib z-999 pt3 pt0-l mr4 mb3" title="reddit link">
+      {{ partial "svg/reddit.svg" (dict "size" $icon_size "fill" $fill) }}
     </a>
   {{ end }}
