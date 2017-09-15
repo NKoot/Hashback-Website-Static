@@ -4,8 +4,8 @@
   "photo": "/uploads/2017/09/15/Yuri-Ivanovich.png",
   "position": "World recognized expert in international relations, global economics and social anthropogenesis",
   "social": {
-    "facebook": "https://facebook.com",
-    "twitter": "https://twitter.com"
+    "facebook": "",
+    "twitter": ""
   },
   "title": "Yuri Ivanovich Nagernyak",
   "type": "page"
