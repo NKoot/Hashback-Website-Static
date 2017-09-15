@@ -6463,7 +6463,7 @@ footer .social-follow a {
     display: block;
 }
 
-footer .social-follow a:nth-child(4n) {
+footer .social-follow a:nth-child(3n+1) {
     clear: both;
 }
 
@@ -6683,7 +6683,7 @@ footer .social-follow a:nth-child(4n) {
     .about.main_page_text {
         padding-top: 2rem;
     }
-    footer .social-follow a:nth-child(4n) {
+    footer .social-follow a:nth-child(3n+1) {
         clear: none;
     }
     .collapsed_menu {
