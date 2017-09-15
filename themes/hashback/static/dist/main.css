@@ -6022,7 +6022,7 @@ main {
 }
 
 .additional_text {
-    bottom: 10%;
+    bottom: 5%;
 }
 
 .about_item .about_icon {
@@ -6184,6 +6184,10 @@ main {
 
 .text_page table th {
     font-weight: 400;
+}
+
+.table_responsive {
+    overflow: visible;
 }
 
 .card_item  {
@@ -6492,6 +6496,9 @@ footer .social-follow a:nth-child(4n) {
     .orders_item {
         width: 32%;
     }
+    .additional_text {
+        bottom: 10%;
+    }
 }
 
 @media only screen and (max-width: 1920px) {
@@ -6602,7 +6609,7 @@ footer .social-follow a:nth-child(4n) {
         height: 375px;
     }
     .additional_text {
-        bottom: 8%;
+        bottom: 4%;
     }
     .animated_image {
         left: 48%;
@@ -6724,6 +6731,30 @@ footer .social-follow a:nth-child(4n) {
     .main_header {
         background-image: url('/images/background_320.jpg');
     }
+    .textpage_bg .bg-white {
+        width: 96%;
+    }
+    .table_responsive {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll
+    }
+    .table_responsive::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: #F5F5F5;
+    }
+
+    .table_responsive::-webkit-scrollbar
+    {
+        height: 6px;
+        background-color: #F5F5F5;
+    }
+
+    .table_responsive::-webkit-scrollbar-thumb
+    {
+        background-color: #1A66C6;
+    }
     .logo {
         padding-top: 10rem;
     }
@@ -6762,7 +6793,7 @@ footer .social-follow a:nth-child(4n) {
         width: 100%;
     }
     .additional_text {
-        bottom: 6%;
+        bottom: 10px;
     }
     .orders_item {
         width: 300px;

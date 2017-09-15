@@ -37,3 +37,5 @@ $('body').on('click', function (e) {
 		$('.js_collapsed_menu').hide();
 	}
 });
+
+$('.text_page table').wrap('<div class="table_responsive"></div>');

@@ -58223,6 +58223,8 @@ $('body').on('click', function (e) {
 	}
 });
 
+$('.text_page table').wrap('<div class="table_responsive"></div>');
+
 /***/ }),
 /* 159 */
 /***/ (function(module, exports, __webpack_require__) {
