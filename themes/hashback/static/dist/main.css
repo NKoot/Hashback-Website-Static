@@ -6201,7 +6201,7 @@ main {
     height: 273px;
     padding: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .2);
-    margin: 1rem;
+    margin: 1%;
     cursor: pointer;
 }
 
@@ -6819,7 +6819,7 @@ footer .social-follow a:nth-child(3n+1) {
         height: auto;
     }
     .center_content {
-        width: 80%;
+        width: 90%;
     }
     .center_content.form_page {
         width: 100%;
