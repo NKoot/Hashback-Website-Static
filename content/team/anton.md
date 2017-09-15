@@ -4,8 +4,7 @@
   "photo": "/uploads/2017/09/15/Anton.png",
   "position": "Co-Founder, contributing to technical leadership, user experience, front end development",
   "social": {
-    "facebook": "https://facebook.com",
-    "twitter": "https://twitter.com"
+    
   },
   "title": "Anton Serkov",
   "type": "page"
