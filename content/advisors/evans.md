@@ -1,12 +1,12 @@
 {
   "department": "advisors",
-  "name": "Jennifer Bianchi",
+  "name": "Luba Evans",
   "photo": "/uploads/2017/09/15/Yuri-Ivanovich-1.png",
-  "position": "Entrepreneur, model & spokeswoman extraordinaire",
+  "position": "Marketing & marketing communications mastermind",
   "social": {
     "facebook": "",
     "twitter": ""
   },
-  "title": "Jennifer Bianch",
+  "title": "Luba Evans",
   "type": "page"
 }
