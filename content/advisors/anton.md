@@ -1,24 +1,25 @@
 {
-	"title": "Anton Serkov",
-	"name": "Anton Serkov",
-	"photo": "/images/team/IMG_0239-1024x683@2x.png",
-	"department": "advisors",
-	"position": "Co-Founder, contributing to technical leadership, user experience, front end development",
-
-	"social": {
-		"facebook": "https://facebook.com",
-		"twitter": "https://twitter.com"
-	},
-	"type": "page"
+  "department": "advisors",
+  "name": "Yuri Ivanovich Nagernyak",
+  "photo": "/uploads/2017/09/15/Yuri-Ivanovich.png",
+  "position": "World recognized expert in international relations, global economics and social anthropogenesis",
+  "social": {
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com"
+  },
+  "title": "Yuri Ivanovich Nagernyak",
+  "type": "page"
 }
 
-Anton is a linguist, an outgoing nerd, and someone who refuses to shave his thin, visually misplaced beard despite all failed attempts to convince him otherwise. On the bright side, there’s this:
 
-Anton is a brilliant software developer and engineer with a myriad of successful mobile
-and web application projects to his credit. His responsibilities include software architecture,
-professional front and back-end engineering, as well as interface and interaction design
-projects emphasizing optimal user experience.
+Currently Yuri’s work focuses exclusively on matters regarding intelligent and emerging economic advancements, BRICS, global transportation and logistics, and systemic problem resolution in the fight against global terrorism.
 
-He is an individual commonly known as a “tech prodigy” and has for eight years been recruited to re-engineer struggling software startups that hit a brick wall. Most recently he took micro-cap Smilart UG Stuttgart/Smilart LLC, a facial recognition micro-cap software development company using open source algorithms for holistic face detection, and produced for them a viable, sellable product in under eighteen months. Prior to Smilart, Anton assisted Simple Solutions LLC, a photo editing software startup to gain traction in the Russian marketplace amongst its competitors by creating an online version of their product that social media networks use successfully to this day. Before that he gained work experience at the Computer Security Agency in Russia developing a social network multipurpose platform. Prior to that Anton worked on his own independent project in the virtual reality space, in particular, he enhanced VR for compatibility on mobile platforms for smartphones. Anton was a major contributor in protracting the usage of real-time databases for the universal chat platform Chatnbook as well as others.
+He was the CEO, board member, and advisory committee member at several commercial and financial organizations as well as a member of the board and co-founder of a number of public and nonprofit organizations.
 
-Anton has earned numerous awards and honors in programming competitions, most recently from the Association for Computing Machinery (ACM).
+For over 30 years Yuri worked in the top hierarchy of Russia’s executive and legislative branches of government, including more than 10 years in Russian foreign affairs offices throughout Far Eastern and Southeast Asian countries.
+
+Yuri has an extensive list of publications, is the subject of countless media and news interviews, and is a frequent speaker and thought leader at engagements focused on political matters. He is an Academician of the Russian Academy of Natural Sciences (RANS) and an active member of the Moscow Society of Naturalists (http://www.moip.msu.ru/en/).
+
+As the author of a new scientific direction in the field of institutional economics Yuri was nominated for the Nobel Prize in Economic Sciences.
+
+Yuri completed the renowned Moscow State Institute for International Relations, Ministry of Foreign Affairs, commonly known as “MGIMO”, summa cum laude (red diploma) in international relations, and finished his graduate work in global economics at the esteemed Institute of Asian Studies of the Russian Academy of Sciences.
