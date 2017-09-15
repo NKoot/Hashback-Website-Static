@@ -1,7 +1,7 @@
 {
   "department": "advisors",
   "name": "Yuri Ivanovich Nagernyak",
-  "photo": "/uploads/2017/09/15/Yuri-Ivanovich.png",
+  "photo": "/uploads/2017/09/15/Yuri-Ivanovich-1.png",
   "position": "World recognized expert in international relations, global economics and social anthropogenesis",
   "social": {
     "facebook": "",
@@ -10,8 +10,6 @@
   "title": "Yuri Ivanovich Nagernyak",
   "type": "page"
 }
-
-
 Currently Yuri’s work focuses exclusively on matters regarding intelligent and emerging economic advancements, BRICS, global transportation and logistics, and systemic problem resolution in the fight against global terrorism.
 
 He was the CEO, board member, and advisory committee member at several commercial and financial organizations as well as a member of the board and co-founder of a number of public and nonprofit organizations.
