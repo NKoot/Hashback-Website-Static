@@ -1,9 +1,9 @@
 ---
-title: "Partner Mine"
-description: "Partner Mine"
+title: Partner Mine
+description: Partner Mine
 type: page
----
 
+---
 # Partner Mine
 
 Hashback is easily the most beneficial service provider partner network ever! If your organization meets the following criteria, you should be on board, and the earlier you join, the more benefits you will receive.

@@ -4,8 +4,6 @@ description: Hashbackers
 type: page
 
 ---
-
-
 # Hashbackers
 
 Hashbackers are everyday blockchain users who want to own tokens early and at the best possible <span style="font-size: 1rem;">rate through our pre-ITG program and also become the first users of Hashback and its new service&nbsp;</span><span style="font-size: 1rem;">to book and order services over the network once it is launched.</span>

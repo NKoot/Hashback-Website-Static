@@ -1,11 +1,11 @@
 ---
-title: "How"
-description: "How"
+title: How
+description: How
 type: page
-group: "hww"
+group: hww
 weight: 100
----
 
+---
 # How
 
 Hashback is a decentralized blockchain based “Proof-of-Stage” token that can be utilized in any services industry where short term contracts for accommodations, reservations, rentals, leasing, intermittent and time based rate services apply.

@@ -1,11 +1,11 @@
 ---
-title: "When"
-description: "When"
+title: When
+description: When
 type: page
-group: "hww"
+group: hww
 weight: 120
----
 
+---
 /service providers / >>> schedule
 
 First-on-board service providers that join now will enjoy a Grace Mining Period. To access this program Hashback will verify your participation manually. You will need to have a proof of existence, a license, or be listed in one of the known networks with a good reputation score.

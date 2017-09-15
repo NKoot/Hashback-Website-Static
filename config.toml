@@ -8,84 +8,79 @@ googleAnalytics = "UA-106361741-1"
 languageCode = "en-us"
 theme = "hashback"
 title = "Hashback"
-
 [[menu.business]]
 name = "Use cases"
 url = "/use-cases/"
-weight = -70
+weight = 4
 [[menu.business]]
 name = "Benefits"
 url = "/benefits/"
-weight = -80
+weight = 3
 [[menu.business]]
 name = "Join"
 url = "/join/"
-weight = -90
+weight = 2
 [[menu.business]]
 name = "Presentation"
 url = "/presentation/"
-weight = -100
+weight = 1
 [[menu.developers]]
 name = "Technical support"
 url = "/support/"
-weight = -80
+weight = 3
 [[menu.developers]]
 name = "Hashback API"
 url = "/api/"
-weight = -90
+weight = 2
 [[menu.developers]]
 name = "Introduction"
 url = "/introduction/"
-weight = -100
-
+weight = 1
 [[menu.project]]
 name = "Token"
 url = "/token/"
-weight = -70
+weight = 4
 [[menu.project]]
 name = "Join the Team"
 url = "/join"
-weight = -80
+weight = 3
 [[menu.project]]
 name = "Team"
 url = "/team/"
-weight = -90
+weight = 2
 [[menu.project]]
 name = "White Paper"
 url = "/white-paper/"
-weight = -100
-
-[[menu.top]]
-name = "EN"
-url = "/lang/"
-weight = -50
-[[menu.top]]
-name = "GitHub"
-url = "/github/"
-weight = -60
-[[menu.top]]
-name = "Blog"
-url = "/blog/"
-weight = -70
-[[menu.top]]
-name = "Development roadmap"
-url = "/development-roadmap/"
-weight = -80
+weight = 1
 [[menu.top]]
 name = "Team"
 url = "/team/"
-weight = -90
+weight = 3
+[[menu.top]]
+name = "Development roadmap"
+url = "/development-roadmap/"
+weight = 4
+[[menu.top]]
+name = "Blog"
+url = "https://medium.com/hashback/"
+weight = 5
+[[menu.top]]
+name = "GitHub"
+url = "https://github.com/Hashback/"
+weight = 6
+[[menu.top]]
+name = "EN"
+url = "/lang/"
+weight = 7
 [[menu.top]]
 name = "White paper"
 url = "/white-paper/"
-weight = -100
+weight = 2
 [[menu.top]]
 identifier = "executive"
 name = "Executive summary"
 url = "/executive-summary/"
-weight = -110
-
-
+weight = 1
 [params]
 background_color_class = "bg-black"
 bitcoin = "https://bitcointalk.org/"
@@ -95,7 +90,7 @@ featured_image = "/images/logo.png"
 github = "https://www.github.com/hashback"
 instagram = ""
 medium = "https://medium.com/hashback"
+reddit = "https://reddit.com"
 telegram = "https://t.me/Hback"
 twitter = "https://twitter.com/Hash_back"
 youtube = "https://www.youtube.com/channel/UCMD-YhtX3AAQ-HW2JpJCJUg"
-reddit = "https://reddit.com"

@@ -1,7 +1,7 @@
 ---
-title: "blog"
-description: "blog"
+title: blog
+description: blog
 type: page
----
 
+---
 # Under construction

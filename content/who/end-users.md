@@ -1,9 +1,9 @@
 ---
-title: "End-users"
-description: "End-users"
+title: End-users
+description: End-users
 type: page
----
 
+---
 <ul class="submenu ttu tr list">
 	<li class="di">
 		<a href="/who">Service providers</a>

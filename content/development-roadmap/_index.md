@@ -4,8 +4,6 @@ description: development roadmap
 type: page
 
 ---
-
-
 # /Technology and development roadmap
 
 From a technical standpoint the Hashback system will have two components: different client-side front-end applications and ARDSL Framework for the Blockchain and back-end side.

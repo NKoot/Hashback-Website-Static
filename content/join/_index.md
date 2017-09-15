@@ -1,7 +1,8 @@
 ---
-title: "Join Us"
-description: "Join Us"
+title: Join Us
+description: Join Us
 type: page
-group: "team"
+group: team
 weight: 30
+
 ---

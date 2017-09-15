@@ -1,7 +1,8 @@
 ---
-title: "Team"
-description: "Team"
+title: Team
+description: Team
 type: page
-group: "team"
+group: team
 weight: 10
+
 ---
