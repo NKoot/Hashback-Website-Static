@@ -1,13 +1,13 @@
 {
-  "title": "Dmitry Goroshevsky",
-  "name": "Dmitry Goroshevsky",
-  "photo": "/uploads/2017/09/14/Mitya.png",
   "department": "team",
+  "name": "Dmitry Goroshevsky",
+  "photo": "/uploads/2017/09/15/Mitya.png",
   "position": "Co-founder, contributing to overall vision, project management",
   "social": {
     "facebook": "https://facebook.com",
     "twitter": "https://twitter.com"
   },
+  "title": "Dmitry Goroshevsky",
   "type": "page"
 }
 Dmitry is our chief visionary whose inception is now the global strategy we call Hashback. He is the architect of the company’s idea and team leader of Hashback’s concept. He has led numerous technical teams to success and has developed a wide range of innovative solutions, including most recently, Chatnbook and ModUp. “Mitya” as he likes to be called, was the co-founder and CEO of BrainsMatch, which developed innovative matching algorithms for
