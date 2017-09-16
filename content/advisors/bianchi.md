@@ -7,7 +7,7 @@
     "facebook": "",
     "twitter": ""
   },
-  "title": "Jennifer Bianch",
+  "title": "Jennifer Bianchi",
   "type": "page"
 }
 
