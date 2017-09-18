@@ -9,6 +9,7 @@
   },
   "title": "Eugene (“Chuck”) Bogorad",
   "type": "page"
+  "weight": "2"
 }
 
 
