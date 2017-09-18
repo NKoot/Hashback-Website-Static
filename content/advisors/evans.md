@@ -9,6 +9,7 @@
   },
   "title": "Luba Evans",
   "type": "page"
+  "weight": "5"
 }
 
 
