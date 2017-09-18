@@ -6,7 +6,8 @@
   "social": {
   },
   "title": "Viacheslav Belenko",
-  "type": "page"
+  "type": "page",
+  "weight": "5"
 }
 
 
