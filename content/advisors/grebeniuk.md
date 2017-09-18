@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Polina Grebeniuk",
-  "type": "page"
+  "type": "page",
   "weight": "7"
 }
 
