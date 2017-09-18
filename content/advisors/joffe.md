@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Dimitry Joffe",
-  "type": "page"
+  "type": "page",
   "weight": "3"
 }
 
