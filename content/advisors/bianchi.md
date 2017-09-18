@@ -9,6 +9,7 @@
   },
   "title": "Jennifer Bianchi",
   "type": "page"
+  "weight": "6"
 }
 
 
