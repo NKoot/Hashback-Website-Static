@@ -8,7 +8,8 @@
     "twitter": "https://twitter.com"
   },
   "title": "Vasiliy Selivanov",
-  "type": "page"
+  "type": "page",
+  "weight": "4"
 }
 Well looks like someone likes their introvert with a little side of Type A personality for extra spiciness and flavor contrast. Now back to the boredom:
 
