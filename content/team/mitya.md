@@ -8,7 +8,8 @@
     "twitter": "https://twitter.com"
   },
   "title": "Dmitry Goroshevsky",
-  "type": "page"
+  "type": "page",
+  "weight": "1"
 }
 Dmitry is our chief visionary whose inception is now the global strategy we call Hashback. He is the architect of the company’s idea and team leader of Hashback’s concept. He has led numerous technical teams to success and has developed a wide range of innovative solutions, including most recently, Chatnbook and ModUp. “Mitya” as he likes to be called, was the co-founder and CEO of BrainsMatch, which developed innovative matching algorithms for
 the recruitment industry. Prior to that he was co-founder and CEO of Popular Telephony which
