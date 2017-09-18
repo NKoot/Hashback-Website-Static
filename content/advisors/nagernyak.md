@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Yuri Ivanovich Nagernyak",
-  "type": "page"
+  "type": "page",
   "weight": "1"
 }
 Currently Yuri’s work focuses exclusively on matters regarding intelligent and emerging economic advancements, BRICS, global transportation and logistics, and systemic problem resolution in the fight against global terrorism.
