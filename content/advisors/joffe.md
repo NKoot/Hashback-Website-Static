@@ -9,6 +9,7 @@
   },
   "title": "Dimitry Joffe",
   "type": "page"
+  "weight": "3"
 }
 
 
