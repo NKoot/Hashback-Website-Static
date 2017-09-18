@@ -6,7 +6,8 @@
   "social": {
   },
   "title": "Tatiana Karlin",
-  "type": "page"
+  "type": "page",
+  "weight": "7"
 }
 
 
