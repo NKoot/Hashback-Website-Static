@@ -6,7 +6,8 @@
   "position": "Contributing to web and brand design",
   "social": {
   },
-  "type": "page"
+  "type": "page",
+  "weight": "8"
 }
 
 
