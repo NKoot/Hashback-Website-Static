@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Eugene Morozov",
-  "type": "page"
+  "type": "page",
   "weight": "4"
 }
 
