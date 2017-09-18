@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Eugene (“Chuck”) Bogorad",
-  "type": "page"
+  "type": "page",
   "weight": "2"
 }
 
