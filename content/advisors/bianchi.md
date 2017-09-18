@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Jennifer Bianchi",
-  "type": "page"
+  "type": "page",
   "weight": "6"
 }
 
