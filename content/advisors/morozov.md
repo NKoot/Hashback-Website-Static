@@ -9,6 +9,7 @@
   },
   "title": "Eugene Morozov",
   "type": "page"
+  "weight": "4"
 }
 
 
