@@ -9,6 +9,7 @@
   },
   "title": "Polina Grebeniuk",
   "type": "page"
+  "weight": "7"
 }
 
 
