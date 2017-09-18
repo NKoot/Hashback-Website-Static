@@ -8,7 +8,8 @@
     "twitter": "https://twitter.com"
   },
   "title": "Ron Millow",
-  "type": "page"
+  "type": "page",
+  "weight": "3"
 }
 
 
