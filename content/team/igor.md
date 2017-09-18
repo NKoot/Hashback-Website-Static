@@ -6,7 +6,8 @@
   "social": {
   },
   "title": "Igor Kosulin",
-  "type": "page"
+  "type": "page",
+  "weight": "6"
 }
 
 
