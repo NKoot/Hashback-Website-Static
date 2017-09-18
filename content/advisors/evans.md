@@ -8,7 +8,7 @@
     "twitter": ""
   },
   "title": "Luba Evans",
-  "type": "page"
+  "type": "page",
   "weight": "5"
 }
 
