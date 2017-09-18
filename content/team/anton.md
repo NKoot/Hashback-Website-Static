@@ -6,7 +6,8 @@
   "social": {
   },
   "title": "Anton Serkov",
-  "type": "page"
+  "type": "page",
+  "weight": "2"
 }
 Anton is a linguist, an outgoing nerd, and someone who refuses to shave his thin, visually misplaced beard despite all failed attempts to convince him otherwise. On the bright side, there’s this:
 
