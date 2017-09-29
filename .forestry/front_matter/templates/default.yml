@@ -1,4 +1,6 @@
 ---
+pages:
+- team/ru/vasilij-selivanov.md
 hide_body: false
 fields:
 - name: title
