@@ -1,14 +1,13 @@
 {
-  "title": "Anton Serkov",
-  "name": "Anton Serkov",
-  "photo": "/uploads/2017/09/14/Anton.png",
   "department": "team",
+  "name": "Anton Serkov",
+  "photo": "/uploads/2017/09/15/Anton.png",
   "position": "Co-Founder, contributing to technical leadership, user experience, front end development",
   "social": {
-    "facebook": "https://facebook.com",
-    "twitter": "https://twitter.com"
   },
-  "type": "page"
+  "title": "Anton Serkov",
+  "type": "page",
+  "weight": "2"
 }
 Anton is a linguist, an outgoing nerd, and someone who refuses to shave his thin, visually misplaced beard despite all failed attempts to convince him otherwise. On the bright side, there’s this:
 

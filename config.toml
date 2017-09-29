@@ -45,7 +45,7 @@ title = "Hashback"
 
 [[menu.top]]
 	name = "Blog"
-	url = "/blog/"
+	url = "https://medium.com/hashback/"
 	weight = -70
 
 [[menu.top]]
@@ -72,45 +72,43 @@ title = "Hashback"
 [[menu.business]]
 name = "Use cases"
 url = "/use-cases/"
-weight = -70
+weight = 4
 [[menu.business]]
 name = "Benefits"
 url = "/benefits/"
-weight = -80
+weight = 3
 [[menu.business]]
 name = "Join"
 url = "/join/"
-weight = -90
+weight = 2
 [[menu.business]]
 name = "Presentation"
 url = "/presentation/"
-weight = -100
-
+weight = 1
 [[menu.developers]]
 name = "Technical support"
 url = "/support/"
-weight = -80
+weight = 3
 [[menu.developers]]
 name = "Hashback API"
 url = "/api/"
-weight = -90
+weight = 2
 [[menu.developers]]
 name = "Introduction"
 url = "/introduction/"
-weight = -100
-
+weight = 1
 [[menu.project]]
 name = "Token"
 url = "/token/"
-weight = -70
+weight = 4
 [[menu.project]]
 name = "Join the Team"
 url = "/join"
-weight = -80
+weight = 3
 [[menu.project]]
 name = "Team"
 url = "/team/"
-weight = -90
+weight = 2
 [[menu.project]]
 name = "White Paper"
 url = "/white-paper/"
@@ -130,5 +128,4 @@ instagram = ""
 medium = "https://medium.com/hashback"
 telegram = "https://t.me/Hback"
 twitter = "https://twitter.com/Hash_back"
-youtube = "https://www.youtube.com/channel/UCMD-YhtX3AAQ-HW2JpJCJUg"
-reddit = "https://reddit.com"
+youtube = "https://www.youtube.com/c/HashBack"

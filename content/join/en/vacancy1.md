@@ -1,8 +1,9 @@
 {
-	"title": "Head of Programms",
-	"name": "Head of Programms",
-	"photo": "/images/male-user.png",
-	"type": "page"
+  "title": "Translation Bounty",
+  "name": "Translation Bounty",
+  "photo": "/images/male-user.png",
+  "type": "page"
 }
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga earum expedita officia ducimus maxime saepe sequi labore cumque dolores ab aperiam, quae rerum, molestias eveniet debitis quasi eligendi tempora consequuntur.
+
+This is a bounty program for translation into different languages. We are looking for website, executive summary, presentation materials, white paper and other documents translations.

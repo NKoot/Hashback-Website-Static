@@ -1,14 +1,15 @@
 {
   "department": "team",
   "name": "Vasiliy Selivanov",
-  "photo": "/uploads/2017/09/14/Vasiliy.png",
+  "photo": "/uploads/2017/09/15/Vasiliy.png",
   "position": "Contributing to network architecture, project infrastructure and blockchain programming",
   "social": {
     "facebook": "",
     "twitter": "https://twitter.com"
   },
   "title": "Vasiliy Selivanov",
-  "type": "page"
+  "type": "page",
+  "weight": "4"
 }
 Well looks like someone likes their introvert with a little side of Type A personality for extra spiciness and flavor contrast. Now back to the boredom:
 
