@@ -1,22 +1,5 @@
 {{/* Get the current page's URL so we can compare it to the list below */}}
 {{ $currentPageUrl := .URL }}
-<!-- {{/* Get a list of this section's other pages. "RegularPages" excludes the list page    */}}
-{{ $currentSection := (where .Site.RegularPages "Section" .Section) }}
-{{/* Get the number of entries of  $currentSection and subtract 1 */}}
-{{ $i := sub ($currentSection | len) 1 }}
-{{/* So we can only show this menu if there are one or more other entries  */}} -->
-<!-- {{ if ge $i 1 }}
-    <ul class="flex flex-row flex-column-m justify-center center_content center submenu">
-      {{ range $currentSection }}
-        <li class="list f6 fw2 ttu pv2 db{{ if eq $currentPageUrl .URL }} active_item{{end}}">
-          {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
-          <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
-            {{ .Title }}
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-{{ end }} -->
 {{ $currentSection :=  .Section}}
 
 {{if eq $currentPageUrl "/vacancy-form/" }}
@@ -25,7 +8,7 @@
         {{ range where $.Site.Home.Sections "Params.group" .Params.group }}
           <li class="list f6 fw2 ttu pv2 db{{ if eq $currentPageUrl .URL}} active_item{{end}}">
             {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
-            <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
+            <a href="{{ .URL | absLangURL }}" class="no-underline db br pv1 ph3 white ">
               {{ .Title }}
             </a>
           </li>
@@ -40,7 +23,7 @@
           {{ range where $.Site.Home.Sections "Params.group" .Params.group }}
             <li class="list f6 fw2 ttu pv2 db{{ if eq $currentSection .Section}} active_item{{end}}">
               {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
-              <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
+              <a href="{{ .URL | absLangURL }}" class="no-underline db br pv1 ph3 white ">
                 {{ .Title }}
               </a>
             </li>

@@ -15,8 +15,8 @@
         <ul class="mv3">
           {{ range .Site.Menus.developers }}
           <li class="fl-ns fn-l pr3-ns{{ if eq $currentPageUrl .URL }} active_item{{end}}">
-            <a href="{{ .URL }}" title="{{ .Name }} page">
-              {{ .Name }}
+            <a href="{{ .URL | absLangURL}}" title="{{ i18n .Name }} page">
+              {{ i18n .Name }}
             </a>
           </li>
           {{ end }}
@@ -29,8 +29,8 @@
 	  	<ul class="mv3">
           {{ range .Site.Menus.business }}
           <li class="fl-ns fn-l pr3-ns{{ if eq $currentPageUrl .URL }} active_item{{end}}">
-            <a href="{{ .URL }}" title="{{ .Name }} page">
-              {{ .Name }}
+            <a href="{{ .URL | absLangURL}}" title="{{ i18n .Name }} page">
+              {{ i18n .Name }}
             </a>
           </li>
           {{ end }}
@@ -43,8 +43,8 @@
 	  	<ul class="mv3">
 	  		{{ range .Site.Menus.project }}
           <li class="fl-ns fn-l pr3-ns{{ if eq $currentPageUrl .URL }} active_item{{end}}">
-            <a href="{{ .URL }}" title="{{ .Name }} page">
-              {{ .Name }}
+            <a href="{{ .URL | absLangURL}}" title="{{ i18n .Name }} page">
+              {{ i18n .Name }}
             </a>
           </li>
           {{ end }}
@@ -52,10 +52,4 @@
 	  </div>
 	{{ end }}
   </div>
-  <!-- <div>
-	  <a class="f4 fw4 hover-white no-underline black-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
-	    &copy; {{ now.Format "2006" }} {{ .Site.Title }}
-	  </a>
-
-  </div> -->
 </footer>

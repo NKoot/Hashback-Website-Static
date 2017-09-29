@@ -1,5 +1,4 @@
-{{ $featured_image := .Params.featured_image }}
-{{ if $featured_image }}
+{{ $featured_image := "/images/header_bg.jpg" }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
   <header class="cover bg-bottom relative pt3 main_header">
@@ -19,23 +18,3 @@
       </div>
     </div>
   </header>
-{{ else }}
-  <header>
-    <div>
-      {{ partial "site-navigation.html" .}}
-      <div class="tc logo center" id="main_logo">
-        {{ partial "svg/logo_h1.svg" }}
-      </div>
-    </div>
-    <div class="animated_image mt4">
-      <div class="animation-container force3d" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 1; ">
-        <a class="anchor-link" href="#">
-          <div class="rmwidget widget-shape icon" style="left: 0px; top: 0px; width: 60px; height: 60px; z-index: 122;">
-            <img src="{{ $.Site.BaseURL }}/images/{{ .Params.arrow }}">
-          </div>
-        </a>
-      </div>
-    </div>
-  </header>
-{{ end }}
-

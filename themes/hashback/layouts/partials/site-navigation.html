@@ -6,8 +6,8 @@
         <ul class="pl0 mr3 flex flex-row flex-column-m flex-column-ns justify-end-l justify-start-m justify-start-ns">
           {{ range .Site.Menus.top }}
           <li class="list f5 fw4 dib pr3 ttu{{ if eq $currentPageUrl .URL }} active_item{{end}}">
-            <a class="no-underline white-90 pv1" href="{{ .URL }}" title="{{ .Name }} page">
-              {{ .Name }}
+            <a class="no-underline white-90 pv1" href="{{ .URL | absLangURL }}" title="{{ .Name }} page">
+              {{ i18n .Name }}
             </a>
           </li>
           {{ end }}

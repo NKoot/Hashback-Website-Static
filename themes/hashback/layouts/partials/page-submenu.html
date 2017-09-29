@@ -5,7 +5,7 @@
         <ul class="pl0 mr3 flex flex-row flex-column-m justify-end">
           {{ range .Site.Menus.submenu.Params.description }}
           <li class="list f5 fw4 dib pr4 ttu">
-            <a class="no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">
+            <a class="no-underline white-90" href="{{ .URL | absLangURL }}" title="{{ .Name }} page">
               {{ .Name }}
             </a>
           </li>

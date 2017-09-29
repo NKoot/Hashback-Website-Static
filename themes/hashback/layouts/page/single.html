@@ -8,7 +8,7 @@
     {{ partial "menu-contextual.html" . }}
   </div>
   <div class="flex flex-column textpage_bg">
-    {{ if eq $currentPageUrl "/team/" }}
+    {{ if in $currentPageUrl "/team/" }}
       <div class="cf mv3 center_content center flex flex-row-l flex-column-m flex-column-ns justify-between items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "usercard.html" . }}
@@ -23,11 +23,12 @@
       </div>
     {{end}}
     {{ if .Content }}
-    <article class="cf mv3 center_content center bg-white {{ if or (eq $currentPageUrl "/request-access/") (eq $currentPageUrl "/vacancy-form/") }} form_page{{ end }}">
+    <article class="cf mv3 center_content center bg-white {{ if or (in $currentPageUrl "/request-access/") (in $currentPageUrl "/vacancy-form/") }} form_page{{ end }}">
       {{ if .Params.text_image }}<img src="{{ $.Site.BaseURL }}{{ .Params.text_image }}">{{ end }}
       <div class="nested-copy-line-height lh-copy f4 pv4 nested-links mid-gray w-80-l w-80-m w-90-ns center text_page">
-        {{ if in $currentPageUrl "/team/" }}  <a href="/team/">BACK</a>{{ end }}
-        {{ if in $currentPageUrl "/team/" }} {{ partial "profile.html" . }} {{ end }}
+        {{ if in $currentPageUrl "team" }}  <a href={{ "/team/" | absLangURL }}>BACK</a>{{ end }}
+        {{ if in $currentPageUrl "vacancy" }}  <a href={{ "/join/" | absLangURL }}>BACK</a>{{ end }}
+        {{ if in $currentPageUrl "team" }} {{ partial "profile.html" . }} {{ end }}
         {{ .Content }}
       </div>
     </article>

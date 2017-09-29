@@ -10,7 +10,7 @@
       {{ range where $.Site.Home.Sections "Params.group" .Params.group }}
         <li class="list f6 fw2 ttu pv2 db{{ if eq $currentPageUrl .URL}} active_item{{end}}">
           {{/* If the URL returned is the same as the current URL dim it so we know that that's the page we're on. NOTE: Should probably use a more accessible way of displaying this. */}}
-          <a href="{{ .URL }}" class="no-underline db br pv1 ph3 white ">
+          <a href="{{ .URL | absLangURL }}" class="no-underline db br pv1 ph3 white ">
             {{ .Title }}
           </a>
         </li>
@@ -19,14 +19,14 @@
   </div>
 {{ end }}
   <div class="flex flex-column textpage_bg">
-    {{ if or (eq $currentPageUrl "/team/") (eq $currentPageUrl "/advisors/") }}
+    {{ if or (in $currentPageUrl "/team/") (in $currentPageUrl "/advisors/") }}
       <div class="cf mv3 center_content center flex flex-row-l flex-row-m flex-column-ns justify-start-l justify-start-m justify-between-ns items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "usercard.html" . }}
         {{ end }}
       </div>
     {{end}}
-    {{ if eq $currentPageUrl "/join/" }}
+    {{ if in $currentPageUrl "/join/" }}
       <div class="cf mv3 center_content center flex flex-row-l flex-row-m flex-column-ns justify-start-l justify-start-m justify-between-ns items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "joinuscard.html" . }}

@@ -9,6 +9,66 @@ languageCode = "en-us"
 theme = "hashback"
 title = "Hashback"
 
+[Languages]
+[Languages.en]
+  weight = 0
+  languageName = "English"
+[Languages.ru]
+  weight = 10
+  languageName = "Русский"
+
+
+[[menu.top]]
+	name = "EN"
+	url = "/ru"
+	weight = -50
+
+	[[menu.top]]
+      Name = "Русский"
+      parent = "EN"
+      identifire = "ru"
+      URL = "/ru"
+      weight = 0
+
+    [[menu.top]]
+      Name = "English"
+      parent = "EN"
+      identifire = "ru"
+      URL = "/"
+      weight = 10
+
+
+[[menu.top]]
+	name = "GitHub"
+	url = "/github/"
+	weight = -60
+
+[[menu.top]]
+	name = "Blog"
+	url = "/blog/"
+	weight = -70
+
+[[menu.top]]
+	name = "Development roadmap"
+	url = "/development-roadmap/"
+	weight = -80
+
+[[menu.top]]
+	name = "Team"
+	url = "/team/"
+	weight = -90
+
+[[menu.top]]
+	name = "White paper"
+	url = "/white-paper/"
+	weight = -100
+
+[[menu.top]]
+	name = "Executive summary"
+	url = "/executive-summary/"
+	weight = -110
+
+
 [[menu.business]]
 name = "Use cases"
 url = "/use-cases/"
@@ -25,6 +85,7 @@ weight = -90
 name = "Presentation"
 url = "/presentation/"
 weight = -100
+
 [[menu.developers]]
 name = "Technical support"
 url = "/support/"
@@ -55,35 +116,7 @@ name = "White Paper"
 url = "/white-paper/"
 weight = -100
 
-[[menu.top]]
-name = "EN"
-url = "/lang/"
-weight = -50
-[[menu.top]]
-name = "GitHub"
-url = "/github/"
-weight = -60
-[[menu.top]]
-name = "Blog"
-url = "/blog/"
-weight = -70
-[[menu.top]]
-name = "Development roadmap"
-url = "/development-roadmap/"
-weight = -80
-[[menu.top]]
-name = "Team"
-url = "/team/"
-weight = -90
-[[menu.top]]
-name = "White paper"
-url = "/white-paper/"
-weight = -100
-[[menu.top]]
-identifier = "executive"
-name = "Executive summary"
-url = "/executive-summary/"
-weight = -110
+
 
 
 [params]
