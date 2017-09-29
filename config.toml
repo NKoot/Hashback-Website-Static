@@ -40,7 +40,7 @@ title = "Hashback"
 
 [[menu.top]]
 	name = "GitHub"
-	url = "/github/"
+	url = "https://www.github.com/hashback"
 	weight = -60
 
 [[menu.top]]
