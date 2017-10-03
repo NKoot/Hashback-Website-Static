@@ -223,9 +223,7 @@ main {
 .about_text ul.advantages > li {
     background: none;
 }
-.about_text ul ol {
-    width: 50%;
-}
+
 .about_text ul ol li {
     padding-left: 30px;
 }
@@ -988,5 +986,12 @@ footer .social-follow a:nth-child(3n+1) {
         height: 850px;
         width: 100%;
     }
+    .about_text ul {
+        margin-left: 0;
+    }
+    .about_text ul ol {
+        padding: 10px 0;
+    }
+
 }
 
