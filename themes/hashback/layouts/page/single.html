@@ -7,8 +7,8 @@
   <div class="bg-transparent">
     {{ partial "menu-contextual.html" . }}
   </div>
-  <div class="flex flex-column textpage_bg">
-    {{ if in $currentPageUrl "/team/" }}
+  <div class="flex flex-column textpage_bg {{ if or (in $currentPageUrl "/team/") (in $currentPageUrl "/advisors/") (in $currentPageUrl "vacancy")}}blue{{end}}">
+    {{ if or (in $currentPageUrl "team") (in $currentPageUrl "advisors") }}
       <div class="cf mv3 center_content center flex flex-row-l flex-column-m flex-column-ns justify-between items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "usercard.html" . }}
@@ -25,10 +25,11 @@
     {{ if .Content }}
     <article class="cf mv3 center_content center bg-white {{ if or (in $currentPageUrl "/request-access/") (in $currentPageUrl "/vacancy-form/") }} form_page{{ end }}">
       {{ if .Params.text_image }}<img src="{{ $.Site.BaseURL }}{{ .Params.text_image }}">{{ end }}
-      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links mid-gray w-80-l w-80-m w-90-ns center text_page">
-        {{ if in $currentPageUrl "team" }}  <a href={{ "/team/" | absLangURL }}>BACK</a>{{ end }}
-        {{ if in $currentPageUrl "vacancy" }}  <a href={{ "/join/" | absLangURL }}>BACK</a>{{ end }}
-        {{ if in $currentPageUrl "team" }} {{ partial "profile.html" . }} {{ end }}
+      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links mid-gray text_page">
+        {{ if in $currentPageUrl "team" }}  <a href={{ "/team/" | absLangURL }}><span class="arrow_back">{{ partial "svg/arrow_back.svg"}}</span>BACK</a>{{ end }}
+        {{ if in $currentPageUrl "advisors" }}  <a href={{ "/advisors/" | absLangURL }}><span class="arrow_back">{{ partial "svg/arrow_back.svg"}}</span>BACK</a>{{ end }}
+        {{ if in $currentPageUrl "vacancy" }}  <a href={{ "/join/" | absLangURL }}><span class="arrow_back">{{ partial "svg/arrow_back.svg"}}</span>BACK</a>{{ end }}
+        {{ if or (in $currentPageUrl "team") (in $currentPageUrl "advisors") }} {{ partial "profile.html" . }} {{ end }}
         {{ .Content }}
       </div>
     </article>

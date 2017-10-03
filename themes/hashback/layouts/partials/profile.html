@@ -1,17 +1,17 @@
 {{ $icon_size := "32px" }}
-{{ $fill := "#357edd" }}
+{{ $fill := "#2D9CDB" }}
 <div class="flex flex-row justify-start items-start pv2">
-  {{ if  .Params.photo }}<img src="{{ $.Site.BaseURL }}{{ .Params.photo }}" class="avatar w-30 mr3">{{end}}
+  {{ if  .Params.photo }}<img src="{{ $.Site.BaseURL }}{{ .Params.photo }}" class="avatar mr4">{{end}}
   <div>
-    <h3 class="pb3">{{ .Params.name }}</h3>
+    <h2 class="pb3">{{ .Params.name }}</h2>
     <p>{{ .Params.position }}</p>
+    <div class="social_buttons pt4">
+      {{ range $key, $value := .Params.social}}
+        <a href="{{ $value }}" class="social_item" title={{$key}}>
+        {{ $image := (trim $key "\"") }}
+        {{ partial (print "svg/" $image ".svg") (dict "size" $icon_size "fill" $fill) }}
+          </a>
+      {{end}}
+    </div>
   </div>
-</div>
-<div class="social_buttons pt4">
-  {{ range $key, $value := .Params.social}}
-    <a href="{{ $value }}" class="social_item" title={{$key}}>
-    {{ $image := (trim $key "\"") }}
-    {{ partial (print "svg/" $image ".svg") (dict "size" $icon_size "fill" $fill) }}
-      </a>
-  {{end}}
 </div>

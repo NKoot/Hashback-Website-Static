@@ -8,6 +8,7 @@ googleAnalytics = "UA-106361741-1"
 languageCode = "en-us"
 theme = "hashback"
 title = "Hashback"
+<<<<<<< HEAD
 
 [Languages]
 [Languages.en]
@@ -45,7 +46,7 @@ title = "Hashback"
 
 [[menu.top]]
 	name = "Blog"
-	url = "https://medium.com/hashback/"
+	url = "/blog/"
 	weight = -70
 
 [[menu.top]]
@@ -69,6 +70,8 @@ title = "Hashback"
 	weight = -110
 
 
+=======
+>>>>>>> upstream/master
 [[menu.business]]
 name = "Use cases"
 url = "/use-cases/"
@@ -84,8 +87,12 @@ weight = 2
 [[menu.business]]
 name = "Presentation"
 url = "/presentation/"
-weight = 1
+<<<<<<< HEAD
+weight = -100
 
+=======
+weight = 1
+>>>>>>> upstream/master
 [[menu.developers]]
 name = "Technical support"
 url = "/support/"
@@ -98,7 +105,6 @@ weight = 2
 name = "Introduction"
 url = "/introduction/"
 weight = 1
-
 [[menu.project]]
 name = "Token"
 url = "/token/"
@@ -114,11 +120,44 @@ weight = 2
 [[menu.project]]
 name = "White Paper"
 url = "/white-paper/"
+<<<<<<< HEAD
+weight = -100
+
+
+
+
+=======
 weight = 1
-
-
-
-
+[[menu.top]]
+name = "Team"
+url = "/team/"
+weight = 3
+[[menu.top]]
+name = "Development roadmap"
+url = "/development-roadmap/"
+weight = 4
+[[menu.top]]
+name = "Blog"
+url = "https://medium.com/hashback/"
+weight = 5
+[[menu.top]]
+name = "GitHub"
+url = "https://github.com/Hashback/"
+weight = 6
+[[menu.top]]
+name = "EN"
+url = "/lang/"
+weight = 7
+[[menu.top]]
+name = "White paper"
+url = "/white-paper/"
+weight = 2
+[[menu.top]]
+identifier = "executive"
+name = "Executive summary"
+url = "/executive-summary/"
+weight = 1
+>>>>>>> upstream/master
 [params]
 background_color_class = "bg-black"
 bitcoin = "https://bitcointalk.org/"

@@ -12,8 +12,12 @@ body {
     margin: 0 auto;
     height: 100vh;
 }
+.nested-links a {
+    color: #2d9cdb;
+}
 a {
     text-decoration: none;
+
 }
 * {
     outline: none;
@@ -60,7 +64,7 @@ header.main_header {
     background-image: url('/images/header_bg.jpg');
 }
 .about {
-    background-image: url('/images/about_bg.jpg')
+    background-image: url('/images/about_bg_1.jpg')
 }
 #main_logo {
     width: 599px;
@@ -81,7 +85,7 @@ main {
     width: 1170px;
 }
 .textpage_bg .bg-white {
-    width: 62%;
+    width: 770px;
 }
 .button_toggle_menu {
     width: 55px;
@@ -161,24 +165,86 @@ main {
 .additional_text {
     bottom: 5%;
 }
-.about_item .about_icon {
-    width: 15%;
+.highlighted_text {
+    color: #fffd38; /*#FDEF52*/
 }
-.about_item .about_icon svg {
-    width: 100%;
+.about_item:nth-child(1) {
+    background: url('/images/romb1.png') no-repeat 50% 20px;
+}
+.about_item:nth-child(2) {
+    background: url('/images/romb2.png') no-repeat 50% 20px;
+}
+.about_item:nth-child(3) {
+    background: url('/images/romb3.png') no-repeat 50% 20px;
+}
+.about_item .about_icon {
+    text-align: center;
+}
+.about_item .about_icon svg, .about_item .about_icon img {
+    width: auto;
+    height: 120px;
 }
 .about_header, .about_header a {
-    color: #FDEF52;
+    color: #fffd38;
     font-weight: bold;
     text-decoration: underline;
 }
+.about h2 {
+    color: #fffd38;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
 .about_text {
     clear: both;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.about_text p {
+    padding: 10px 0;
 }
 .about_text a {
     color: #fff;
     text-decoration: none;
     font-size: 1.4rem;
+}
+.about_text ul {
+    margin-left: 30px;
+}
+.about_text ul li {
+    background: url('/images/bullet1.png') no-repeat 0 50%;
+    padding-left: 30px;
+}
+.about_text ul ol {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+.about_text ul.advantages > li {
+    background: none;
+}
+.about_text ul ol {
+    width: 50%;
+}
+.about_text ul ol li {
+    padding-left: 30px;
+}
+.about_text ul > li:nth-child(1) ol li {
+    background: url('/images/bullet2.1.png') no-repeat 0 5px;
+    background-size: 25px 25px;
+}
+.about_text ul > li:nth-child(2) ol li {
+    background: url('/images/bullet2.2.png') no-repeat 0 5px;
+    background-size: 25px 25px;
+}
+.about_text h3 {
+    font-size: 1.3rem;
+
+}
+.illustrate {
+    background: #8baef2;
+    border-radius: 40px;
+    padding: 20px;
 }
 .animation-container.force3d {
     -webkit-backface-visibility: hidden;
@@ -220,26 +286,41 @@ main {
     z-index: 1000;
 }
 .textpage_bg {
-    background: url('/images/bg_textpage.png') repeat-y 0 0 scroll;
+    background: #fff;
     background-size: 100% auto;
 }
+.textpage_bg.blue {
+    background: transparent url('/images/bg_textpage.png') repeat-y 0 0 scroll;
+    background-size: 100% auto;
+}
+
+/*Картинки:
+Большая - 770px ширина
+Маленькая - 370х240px*/
+
 .text_page h1, .text_page h2, .text_page h3 {
-    color: #000;
+    color: #333;
     margin: 0;
     padding: 1.5rem 0 1rem;
 }
 .text_page h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
 .text_page h2 {
     font-size: 24px;
 }
 .text_page h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 .text_page p {
-    padding: 1rem 0;
+    /*padding: 1rem 0;*/
+    font-size: 21px;
+    color: #626262;
+    line-height: 1.4;
     margin: 0;
+}
+.textpage_bg.blue .text_page {
+    padding: 2rem;
 }
 .text_page h1 + p, .text_page h2 + p, .text_page h3 + p {
     padding-top: 0;
@@ -247,6 +328,13 @@ main {
 .text_page ul:not(.submenu) {
     list-style: disc;
     margin-left: 45px;
+}
+.text_page img {
+    width: 100%;
+}
+.textpage_bg.blue .text_page .avatar {
+    width: 220px;
+    height: 220px;
 }
 .text_page .submenu {
     overflow: hidden;
@@ -296,6 +384,9 @@ main {
 }
 .table_responsive {
     overflow: visible;
+}
+.arrow_back > * {
+    width: 16px !important;
 }
 .card_item  {
     /*width: 358px;*/
@@ -597,7 +688,7 @@ footer .social-follow a:nth-child(3n+1) {
         width: 1270px;
     }
     .textpage_bg .bg-white {
-        width: 62%;
+        width: 770px;
     }
     .animated_image {
         left: 49%;

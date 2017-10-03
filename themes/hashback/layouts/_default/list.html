@@ -18,15 +18,15 @@
     </ul>
   </div>
 {{ end }}
-  <div class="flex flex-column textpage_bg">
-    {{ if or (in $currentPageUrl "/team/") (in $currentPageUrl "/advisors/") }}
+  <div class="flex flex-column textpage_bg {{ if or (in $currentPageUrl "/team/") (in $currentPageUrl "/advisors/") (in $currentPageUrl "join")}}blue{{end}}">
+    {{ if or (in $currentPageUrl "team") (in $currentPageUrl "advisors") }}
       <div class="cf mv3 center_content center flex flex-row-l flex-row-m flex-column-ns justify-start-l justify-start-m justify-between-ns items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "usercard.html" . }}
         {{ end }}
       </div>
     {{end}}
-    {{ if in $currentPageUrl "/join/" }}
+    {{ if in $currentPageUrl "join" }}
       <div class="cf mv3 center_content center flex flex-row-l flex-row-m flex-column-ns justify-start-l justify-start-m justify-between-ns items-start flex-wrap">
         {{ range .Pages }}
            {{ partial "joinuscard.html" . }}
@@ -36,7 +36,7 @@
     {{ if .Content }}
     <article class="cf mv3 center_content center bg-white">
       {{ if .Params.text_image }}<img src="{{ $.Site.BaseURL }}{{ .Params.text_image }}">{{ end }}
-      <div class="f4 pv4 w-80 center text_page">
+      <div class="f4 text_page">
         {{ .Content }}
       </div>
     </article>

@@ -6,7 +6,7 @@
 {{ $currentSection := where .Data.Pages "Section" .Section }}
 
 
-  <div class="flex flex-column textpage_bg">
+  <div class="flex flex-column textpage_bg1">
     {{ if in $currentPageUrl "team" }}
     <div class="cf mv3 center_content center flex flex-row-l flex-row-m flex-column-ns justify-between items-start flex-wrap">
       {{ range $.Site.Data.company.team }}
@@ -17,7 +17,7 @@
     {{ if .Content }}
     <article class="cf mv3 center_content center bg-white">
       {{ if .Params.text_image }}<img src="{{ $.Site.BaseURL }}{{ .Params.text_image }}">{{ end }}
-      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links nested-img mid-gray w-80 center text_page">
+      <div class="nested-copy-line-height lh-copy f4 pv4 nested-links nested-img mid-gray text_page">
         {{ .Content }}
       </div>
     </article>

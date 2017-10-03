@@ -1,29 +1,123 @@
 {{ $about_bg := .Params.about_bg }}
 <div class="about cover bg-center relative main_page_text">
-	<div class="flex flex-row flex-column-ns justify-between items-center center_content center tl">
-		<div class="about_item pr3 pv3 w-40-l w-40-m w-90-ns">
-			<div class="about_icon"><a href={{ "/how" | absLangURL }}>{{ partial "svg/how.svg" }}</a></div>
-			<div class="about_header pv3 f2"><a href={{ "/how" | absLangURL }}>How?</a></div>
-			<div class="about_text"><a href={{ "/how" | absLangURL }}>By tokenizing services, Hashback creates trust without 3rd party expenses, totally reinvents the service economy, pays service providers who use it, and reforms loyalty and quality control.</a>
-</div>
-		</div>
-		<div class="about_item pr3 pv3 w-40-l w-40-m w-90-ns">
-			<div class="about_icon"><a href={{ "/who" | absLangURL }}>{{ partial "svg/who.svg" }}</a></div>
-			<div class="about_header pv3 f2"><a href={{ "/who" | absLangURL }}>Who?</a></div>
-			<div class="about_text"><a href={{ "/who" | absLangURL }}>Any service provider with short term accommodation, rental, lease or intermittent services that fights for steady orders can generate an entirely new revenue stream by simply listing their services with us.</a>
-</div>
+	<div class="w-90 center_content center about_text">
+		<p><span class="f3-l f3-m f2-ns highlighted_text">Hashback</span> is the only platform in existence that allows service providers to get paid twice — once for selling their services and once more by mining cryptocurrency.</p>
+		<p>Service providers can now earn tokens simply by registering with Hasback and listing their services on the blockchain.</p>
+		<p>Customers contract services directly with security and confidence thanks to the transparency, reputation and verification algorithms of the Hashback token.</p>
+		<p>Hashback is open source and programmable which means that new or existing loyalty and rewards programs can be built on top of or integrated into Hashback.</p>
+	</div>
+	<div class="w-90 center_content center">
+		<div class="about_header pv3 f2">Service providers:</div>
+		<div class="about_text">
+			<ul>
+				<li>Mine tokens while you market your services and await sales orders</li>
+				<li>Sell your services quicker, faster and directly to your customer without 3rd party fees</li>
+				<li>Pocket additional money once you deliver your services</li>
+			</ul>
+			<div class="about_header pv3 f2">Users:</div>
+			<ul>
+				<li>Contract services directly, securely and more conveniently</li>
+				<li>Buy services stripped of all 3rd party upcharges</li>
+				<li>Influence reputations and ratings like never before and earn rewards for it</li>
+			</ul>
 		</div>
 	</div>
-	<div class="flex flex-row flex-column-ns justify-between items-center center_content center tl">
-		<div class="about_item pr3 pv3 w-40-l w-40-m w-90-ns">
-			<div class="about_icon"><a href={{ "/when" | absLangURL }}>{{ partial "svg/when.svg" }}</a></div>
-			<div class="about_header pv3 f2"><a href={{ "/when" | absLangURL }}>When?</a></div>
-			<div class="about_text"><a href={{ "/when" | absLangURL }}>Before the ITG, service providers can accumulate early revenue generation momentum that pays out at launch. The earlier you start the more your tokens will be worth.</a></div>
+	<div class="flex flex-row flex-column-ns justify-between items-center center_content center tl pb3">
+		<div class="about_item ph3 pv3 w-30-l w-30-m w-90-ns">
+			<div class="about_icon"><img src="{{ $.Site.BaseURL }}images/icon1.png"></div>
+			<div class="about_text">Through a decentralized and autonomous mining process, service providers generate tokens whenever their orders are listed as available but have not been bought yet.
+			</div>
 		</div>
-		<div class="about_item pr3 pv3 w-40-l w-40-m w-90-ns">
-			<div class="about_icon"><a href="/why"{{ "/why" | absLangURL }}>{{ partial "svg/why.svg" }}</a></div>
-			<div class="about_header pv3 f2"><a href="/why"{{ "/why" | absLangURL }}>Why?</a></div>
-			<div class="about_text"><a href="/why"{{ "/why" | absLangURL }}>The blockchain presents a game changing economic revolution through the shared economy and Hashback wants to use this opportunity to shift the odds back in favor of those who have been impaired by traditional economic restrictions.</a></div>
+		<div class="about_item ph3 pv3 w-30-l w-30-m w-90-ns">
+			<div class="about_icon"><img src="{{ $.Site.BaseURL }}images/icon2.png"></div>
+			<div class="about_text">No computing power is needed to mine for tokens. Hashback’s app and blockchain technology do all the work so the service provider need only manage its own service availability.
+			</div>
 		</div>
+		<div class="about_item ph3 pv3 w-30-l w-30-m w-90-ns">
+			<div class="about_icon"><img src="{{ $.Site.BaseURL }}images/icon3.png"></div>
+			<div class="about_text">Once the service is purchased the service provider delivers its service and collects both the sales revenue and now also the secondary mined revenue.
+			</div>
+		</div>
+	</div>
+	<div class="w-90 center_content center about_text pb3">Bitcoin removed 3rd parties from financial transactions. <span class="f3-l f3-m f2-ns highlighted_text">Hashback</span> removes 3rd parties from discontinuous and/or intermittent sales order services industries.</div>
+	<div class="flex flex-row flex-column-ns justify-between items-center center_content center tl pb3">
+		<div class="about_text">
+			<ul>
+				<li>Hotels, venues & conventions</li>
+				<li>Leisure & tourism</li>
+				<li>Apartment, home & domicile rental</li>
+				<li>Auto rental</li>
+				<li>Taxi & individual transportation</li>
+				<li>Logistics & freight</li>
+			</ul>
+		</div>
+
+		<div class="about_text">
+			<ul>
+				<li>Delivery, pick up, postage & courier</li>
+				<li>Adult services & entertainment</li>
+				<li>Attorney, CPA, consulting</li>
+				<li>Modeling, photoshooting</li>
+				<li>Commission based outsourcing</li>
+				<li>Housekeeping</li>
+			</ul>
+		</div>
+
+		<div class="about_text">
+			<ul>
+				<li>Home repair</li>
+				<li>Freelancers</li>
+				<li>Tutors & private instructors</li>
+				<li>On-call professionals</li>
+				<li>Private medical practice</li>
+			</ul>
+		</div>
+	</div>
+	<div class="w-90 center_content center about_text pv3">
+		<h2>How is it done?</h2>
+		<p class="about_text">We introduce a comprehensive blockchain token (a set of smart contracts) that handle the business logic, breaking the service process down into 5 stages:</p>
+		<div class="w-90 center_content center about_text mt3 illustrate">
+			<img src="{{ $.Site.BaseURL }}images/illustrate.png">
+		</div>
+		<div class="w-90 center_content center about_text pv3">We coined this process “Proof-of-Stage” and the token it mines is called the Hashback or HBK.</div>
+	</div>
+	<div class="w-90 center_content center about_text pv3">
+		<h2>Advantages</h2>
+		<ul class="advantages">
+			<li>
+				<h3>For the Service provider:</h3>
+				<div class="flex flex-row flex-column-ns justify-between items-center tl pb3">
+					<ol>
+						<li>Generates incentive for service providers & customers to deal direct over the blockchain</li>
+						<li>Promotes system to existing customers to join and book direct</li>
+						<li>Mitigates third party intermediaries yet retains trust & security</li>
+					</ol>
+					<ol>
+						<li>Everyone benefits as the price of the token appreciates as new users join</li>
+						<li>Costs of services go down and revenues are driven up</li>
+						<li>Large new revenue stream simply for listing and performing your services through Hashback</li>
+						<li>Major bonuses for joining Hashback early</li>
+					</ol>
+				</div>
+			</li>
+			<li>
+				<h3>For users in the blockchain community:</h3>
+				<div class="flex flex-row flex-column-ns justify-between items-center tl pb3">
+					<ol>
+						<li>Open, decentralized system that no single entity controls, which means no manipulation-for-money of any rating or search result</li>
+						<li>Protocol ensures ratings are objective</li>
+						<li>Rankings are a direct reflection of ratings and cannot be altered since the cost, even for a pool of users is way too high</li>
+						<li>As the network grows manipulation costs increase disproportionately</li>
+					</ol>
+					<ol>
+						<li>Brings new players to the blockchain community and helps it grow exponentially</li>
+						<li>More trustworthy, secure and reliable than 3rd parties and agents</li>
+						<li>Brings costs for services don in the long run</li>
+						<li>Creates free market competition among service providers</li>
+						<li>Inflation resistant tokens</li>
+					</ol>
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
