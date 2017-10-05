@@ -240,8 +240,8 @@ main {
 
 }
 .illustrate {
-    background: #8baef2;
-    border-radius: 40px;
+    /*background: #8baef2;
+    border-radius: 40px;*/
     padding: 20px;
 }
 .animation-container.force3d {
