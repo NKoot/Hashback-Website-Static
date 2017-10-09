@@ -57,3 +57,9 @@
       {{ partial "svg/reddit.svg" (dict "size" $icon_size "fill" $fill) }}
     </a>
   {{ end }}
+
+  {{ with .Site.Params.gitter }}
+    <a target="_blank" href="{{ . }}" class="link-transition gitter link dib z-999 pt3 pt0-l mr4 mb3" title="gitter link">
+      <img src="{{ $.Site.BaseURL }}/images/gitten_icon.png">
+    </a>
+  {{ end }}

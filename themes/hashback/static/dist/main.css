@@ -5903,7 +5903,8 @@ header.main_header {
 }
 
 .about {
-    background-image: url('/images/about_bg_1.jpg')
+    /*background-image: url('/images/about_bg_1.jpg');*/
+    background-image: url('/images/bg2.jpg');
 }
 
 #main_logo {
@@ -5985,6 +5986,10 @@ main {
 .orders_item, .about_item {
     position: relative;
     color: #fff;
+}
+
+.about_item {
+    min-height: 310px;
 }
 
 .orders_item {
@@ -6070,7 +6075,7 @@ main {
 
 .about_text {
     clear: both;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
@@ -6091,6 +6096,8 @@ main {
 .about_text ul li {
     background: url('/images/bullet1.png') no-repeat 0 50%;
     padding-left: 30px;
+    background-size: 20px 20px;
+    margin: 10px 0;
 }
 
 .about_text ul ol {
@@ -6109,12 +6116,12 @@ main {
 
 .about_text ul > li:nth-child(1) ol li {
     background: url('/images/bullet2.1.png') no-repeat 0 5px;
-    background-size: 25px 25px;
+    background-size: 20px 20px;
 }
 
 .about_text ul > li:nth-child(2) ol li {
     background: url('/images/bullet2.2.png') no-repeat 0 5px;
-    background-size: 25px 25px;
+    background-size: 20px 20px;
 }
 
 .about_text h3 {
@@ -6232,7 +6239,7 @@ main {
     width: 100%;
 }
 
-.textpage_bg.blue .text_page .avatar {
+.text_page .avatar {
     width: 220px;
     height: 220px;
 }
@@ -6904,14 +6911,14 @@ footer .social-follow a:nth-child(3n+1) {
         height: 1788px !important;
     }
     .orders {
-        background-image: url('/images/middle_bg_320.jpg')
+        background-image: url('/images/middle_bg_320.jpg');
     }
     .about {
         min-height: 1192px !important;
         height: auto !important;
     }
     .about {
-        background-image: url('/images/about_bg_320.jpg')
+        background-image: url('/images/about_bg_320.jpg');
     }
     .about_item .about_icon {
         float: left;
