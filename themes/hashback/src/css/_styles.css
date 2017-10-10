@@ -75,6 +75,54 @@ header.main_header {
 header.small_header {
     height: 229px;
 }
+.sub-menu {
+    display: block;
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown-menu > li > * {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #5e6361;
+    white-space: nowrap;
+}
+.dropdown-menu > li.active > * {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.submenu_link {
+    cursor: pointer;
+}
 main {
     min-height: calc(100vh - 300px - 330px);
 }
@@ -282,7 +330,7 @@ main {
     bottom: 10%;
     width: 60px;
     height: 60px;
-    z-index: 1200;
+    z-index: 200;
 }
 .main_page_text {
 	position: relative;
@@ -831,6 +879,9 @@ footer .social-follow a:nth-child(3n+1) {
     }
     footer .social-follow a:nth-child(3n+1) {
         clear: none;
+    }
+    .button_collapsed_menu {
+        z-index: 1000;
     }
     .collapsed_menu {
         position: absolute;

@@ -18,24 +18,22 @@ title = "Hashback"
   languageName = "Русский"
 
 
-[[menu.top]]
-	name = "EN"
-	url = "/ru"
-	weight = -50
+[[menu.lang]]
+    name = "current_language"
+    weight = 0
+    url    = "#"
 
-	[[menu.top]]
-      Name = "Русский"
-      parent = "EN"
-      identifire = "ru"
-      URL = "/ru"
-      weight = 0
-
-    [[menu.top]]
-      Name = "English"
-      parent = "EN"
-      identifire = "ru"
+    [[menu.lang]]
+      name = "English"
+      parent = "current_language"
       URL = "/"
-      weight = 10
+      weight = 1
+
+    [[menu.lang]]
+      name = "Русский"
+      parent = "current_language"
+      URL = "/ru/"
+      weight = 2
 
 
 [[menu.top]]

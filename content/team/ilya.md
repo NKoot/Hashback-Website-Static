@@ -5,6 +5,7 @@
   "department": "team",
   "position": "Contributing to web and brand design",
   "social": {
+	  "facebook": "https://www.facebook.com/ilia.gnomcuddles"
   },
   "type": "page",
   "weight": "8"

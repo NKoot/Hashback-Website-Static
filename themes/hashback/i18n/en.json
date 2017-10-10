@@ -17,5 +17,6 @@
 	"Token": {"other": "Token"},
 	"Join the Team": {"other": "Join the Team"},
 	"Team": {"other": "Team"},
-	"White Paper": {"other": "White Paper"}
+	"White Paper": {"other": "White Paper"},
+	"current_language": {"other": "EN"}
 }

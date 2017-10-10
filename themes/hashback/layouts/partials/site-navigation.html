@@ -2,15 +2,41 @@
 {{ $currentPageUrl := .URL }}
 <img id="js_collapsed_button" class="js_collapsed_button button_collapsed_menu absolute right-1 top-1 dn-l" src="{{ $.Site.BaseURL }}/images/menu-circular-button.png">
 <nav class="js_collapsed_menu collapsed_menu dn-ns dn-m" role="navigation">
-      {{ if .Site.Menus.top }}
-        <ul class="pl0 mr3 flex flex-row flex-column-m flex-column-ns justify-end-l justify-start-m justify-start-ns">
-          {{ range .Site.Menus.top }}
-          <li class="list f5 fw4 dib pr3 ttu{{ if eq $currentPageUrl .URL }} active_item{{end}}">
-            <a class="no-underline white-90 pv1" href="{{ .URL | absLangURL }}" title="{{ .Name }} page">
-              {{ i18n .Name }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
+  <ul class="pl0 mr3 flex flex-row flex-column-m flex-column-ns justify-end-l justify-start-m justify-start-ns">
+    {{ range .Site.Menus.top }}
+    <li class="list f5 fw4 dib pr3 ttu{{ if eq $currentPageUrl .URL }} active_item{{end}}">
+      <a class="no-underline white-90 pv1" href="{{ .URL | absLangURL }}" title="{{ .Name }} page">
+        {{ i18n .Name }}
+      </a>
+    </li>
+    {{ end }}
+    {{ range .Site.Menus.lang }}
+      {{ if .HasChildren }}
+        <li id="js_sub_menu" class="sub-menu list f5 fw4 dib pr3 ttu">
+          <span class="submenu_link no-underline white-90 pv1" id="js_submenu_link">
+            {{ .Pre }}
+            {{ i18n .Name }}
+            <i class="fa fa-caret-down" aria-hidden="true" id="js_submenu_caret"></i>
+          </span>
+          <ul class="dropdown-menu sub">
+            {{ range .Children }}
+            <li  class="{{ if eq $currentPageUrl .URL }}active{{end}}">
+              {{ if eq $currentPageUrl .URL }}
+                <span>{{ .Name }}</span>
+              {{ else }}
+              <a href="{{ .URL }}"> {{ .Name }} </a>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+        </li>
+      {{else}}
+        <li class="list f5 fw4 dib pr3 ttu {{ if eq $currentPageUrl .URL }} active_item{{end}}">
+          <a class="no-underline white-90 pv1" href="{{ .URL | absLangURL }}" title="{{ .Name }} page">
+            {{ i18n .Name }}
+          </a>
+        </li>
       {{ end }}
+    {{ end }}
+  </ul>
 </nav>

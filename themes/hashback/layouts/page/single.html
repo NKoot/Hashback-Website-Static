@@ -7,7 +7,7 @@
   <div class="bg-transparent">
     {{ partial "menu-contextual.html" . }}
   </div>
-  <div class="flex flex-column textpage_bg">
+  <div class="flex flex-column textpage_bg 1">
     {{ if or (in $currentPageUrl "team") (in $currentPageUrl "advisors") }}
       <div class="cf mv3 center_content center flex flex-row-l flex-column-m flex-column-ns justify-between items-start flex-wrap">
         {{ range .Pages }}
