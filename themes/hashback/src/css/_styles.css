@@ -671,6 +671,19 @@ footer .social-follow a:nth-child(3n+1) {
     height: 100%;
 
 }
+.gitter-open-chat-button {
+    background-color: #173164;
+    z-index: 2000;
+    color: #fffd38;
+}
+.gitter-open-chat-button:focus, .gitter-open-chat-button:hover {
+    box-sizing: border-box;
+    background-color: #385184;
+    color: #fff;
+}
+.gitter-chat-embed {
+    z-index: 2000;
+}
 @media only screen and (min-width: 1920px) {
     html {
         font-size: 20px;

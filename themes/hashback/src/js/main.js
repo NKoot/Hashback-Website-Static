@@ -25,13 +25,6 @@ $('#js_collapsed_button').on('click', function (e) {
 	$('.js_collapsed_menu').toggle();
 });
 
-$('.js_collapsed_menu a').on('click', function (e) {
-	console.log($(this));
-	// if ($(this).id !== 'js_sub_menu') {
-
-	// 	$('.js_collapsed_menu').hide();
-	// }
-});
 
 $('body').on('click', function (e) {
 	if (e.target.id !== 'js_collapsed_button'
@@ -53,10 +46,15 @@ $('.js_clickable_item').on('click', function (e) {
 
 $('#js_sub_menu').on('click', function (e) {
 	$(this).children('.dropdown-menu').toggle();
-})
+});
+
+$('#js_submenu_caret').on('click', function (e) {
+	$(this).children('.dropdown-menu').toggle();
+});
 
 $('body').on('click', function (e) {
 	if ($(e)[0].target.id !== 'js_sub_menu'
+		&& $(e)[0].target.id !== 'js_submenu_caret'
 		&& $(e)[0].target.id !== 'js_submenu_link') {
 		$('#js_sub_menu').removeClass('open');
 		$('.dropdown-menu').hide();
