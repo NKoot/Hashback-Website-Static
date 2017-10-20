@@ -1,6 +1,7 @@
 {{ $currentPage := . }}
 {{ $currentPageUrl := .URL }}
 <img id="js_collapsed_button" class="js_collapsed_button button_collapsed_menu absolute right-1 top-1 dn-l" src="{{ $.Site.BaseURL }}/images/menu-circular-button.png">
+
 <nav class="js_collapsed_menu collapsed_menu dn-ns dn-m" role="navigation">
   <ul class="pl0 mr3 flex flex-row flex-column-m flex-column-ns justify-end-l justify-start-m justify-start-ns">
     {{ range .Site.Menus.top }}
@@ -20,8 +21,8 @@
           </span>
           <ul class="dropdown-menu sub">
             {{ range .Children }}
-            <li  class="{{ if eq $currentPageUrl .URL }}active{{end}}">
-              {{ if eq $currentPageUrl .URL }}
+            <li  class="{{ if eq .Identifier $.Site.Language.Lang }}active{{end}}">
+              {{ if eq .Identifier $.Site.Language.Lang }}
                 <span>{{ .Name }}</span>
               {{ else }}
               <a href="{{ .URL }}"> {{ .Name }} </a>

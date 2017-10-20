@@ -441,6 +441,11 @@ main {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .2);
     margin: 1%;
     cursor: pointer;
+    position: relative;
+}
+.social_buttons {
+    position: absolute;
+    bottom: 20px;
 }
 .user_card:nth-child(3n+1) {
     background: url('/images/1.png') 0 0 no-repeat;
@@ -672,13 +677,26 @@ footer .social-follow a:nth-child(3n+1) {
 
 }
 .gitter-open-chat-button {
-    background-color: #173164;
+    background-color: #fff41f;
     z-index: 2000;
-    color: #fffd38;
+    color: #182547;
+    padding: 1em 2em;
+    font-weight: bold;
+}
+.gitter-open-chat-button:before {
+    content: "\f27a";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    margin-right: 10px;
 }
 .gitter-open-chat-button:focus, .gitter-open-chat-button:hover {
     box-sizing: border-box;
-    background-color: #385184;
+    background-color: #2864af;
     color: #fff;
 }
 .gitter-chat-embed {

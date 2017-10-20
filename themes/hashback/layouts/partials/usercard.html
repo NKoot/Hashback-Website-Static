@@ -1,6 +1,6 @@
 {{ $icon_size := "32px" }}
 {{ $fill := "#ffffff" }}
-<div class="card_item js_clickable_item user_card flex flex-column justify-between items-start white" data-link="{{ .Permalink }}">
+<div class="card_item js_clickable_item user_card flex flex-column justify-start items-start white" data-link="{{ .Permalink }}">
 	<h4 class="flex flex-row justify-start items-center"><img src="/images/hash_icon.png"><span class="white ph2">Hashback {{ .Params.department }}</span></h4>
 	<div class="flex flex-row justify-start items-start pv2">
 		{{ if  .Params.photo }}<img src="{{ $.Site.BaseURL }}{{ .Params.photo }}" class="avatar">{{end}}

@@ -26,14 +26,16 @@ title = "Hashback"
     [[menu.lang]]
       name = "English"
       parent = "current_language"
-      URL = "/"
+      url = "/"
       weight = 1
+      identifier = "en"
 
     [[menu.lang]]
       name = "Русский"
       parent = "current_language"
-      URL = "/ru/"
+      url = "/ru/"
       weight = 2
+      identifier = "ru"
 
 
 [[menu.top]]
